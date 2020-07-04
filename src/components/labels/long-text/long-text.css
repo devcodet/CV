@@ -1,0 +1,9 @@
+.long-text{
+    margin: 4%;
+    font-size: large;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    text-align: justify;
+    align-items: center;
+    width: 50%;
+}

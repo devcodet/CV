@@ -1,0 +1,26 @@
+.page-titles{
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    text-align: start;
+    font-size: 40px;
+    color: #00B2FF;
+    margin: 50px;
+    width: 100%;
+  }
+
+  .sub-titles{
+    font-family: 'Open Sans', sans-serif;
+    align-content: center;
+    color: blue;
+    text-align: center;
+  }
+
+  .in-image{
+    margin: 30px auto auto auto;
+    width: 1000px;
+    line-break: normal;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    position: absolute;
+  }

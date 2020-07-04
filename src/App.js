@@ -2,23 +2,23 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//Pages
+import Homepage from './pages/homepage';
+import AboutMe from './pages/about_me';
+import Tools from './pages/tools';
+
+//Components
+import Menu from './components/menu/menu.js';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reloads.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu/>
+
+      <Homepage/>
+      <AboutMe/>
+      <Tools/>
+      
     </div>
   );
 }
