@@ -1,0 +1,32 @@
+.card{
+    height: 450px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 50px;
+}
+
+.card-title{
+    position: absolute;
+    width: 75%;
+    top: 37%;
+    color: black;
+    font-size: 50px;
+}
+
+.card-description{
+    margin-top: 15px;
+    position: relative;
+    color: black;
+    top: 25%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-image{
+    margin-top: 15px;
+    position: relative;
+    width: 50%;
+    border-radius: 0%;
+    margin-top: 5px;
+}

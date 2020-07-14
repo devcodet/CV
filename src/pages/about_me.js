@@ -11,10 +11,13 @@ function AboutMe() {
     return (
       <div className="App-header page">
         <Title name="#about_me"/>
-        <div style={{display: 'flex'}}>
-          <div style={{marginLeft: "50px", textAlign: "start", display: 'grid'}}>
-            <img src={ola} style={{height: "400px", width: "400px", marginBottom: "40px"}}/>
-            <img src={ola} style={{height: "400px", width: "400px", marginBottom: "40px"}}/>
+        <div style={{display: "flex"}}>
+          <div style={{marginLeft: "50px",}}>
+            <img src={ola} style={{height: "400px", width: "400px", marginBottom: "30px"}}/>
+            <p></p>
+            <img src={ola} style={{height: "400px", width: "400px", marginBottom: "30px"}}/>
+            <p></p>
+            <img src={ola} style={{height: "400px", width: "400px", marginBottom: "30px"}}/>
           </div>
           <LongText text="Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec
                         Lorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consec 
@@ -24,6 +27,7 @@ function AboutMe() {
                         Lorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consec 
                         Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec
                         Lorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consec"/>
+
         </div>
       </div>
     );
