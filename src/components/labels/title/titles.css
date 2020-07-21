@@ -7,11 +7,12 @@
     margin: 50px;
   }
 
-  .sub-titles{
+  .page-sub-titles{
     font-family: 'Open Sans', sans-serif;
     align-content: center;
-    color: blue;
+    color: red;
     text-align: center;
+    margin: 20px;
   }
 
   .in-image{

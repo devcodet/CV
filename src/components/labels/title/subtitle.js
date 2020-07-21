@@ -1,12 +1,5 @@
 import React from 'react';
-
 import './titles.css'
-
-function Title(props) {
-    return (
-        <div class="page-titles">{props.name}</div>
-    );
-}
 
 function SubTitle(props){
     return (
@@ -14,4 +7,4 @@ function SubTitle(props){
     );
 }
 
-export default Title;
+export default SubTitle;
