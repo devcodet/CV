@@ -2,15 +2,15 @@
     position: relative;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     color: #00B2FF;
-    margin: 50px;
+    margin: 50px auto 50px auto;
   }
 
   .page-sub-titles{
     font-family: 'Open Sans', sans-serif;
     align-content: center;
-    color: red;
+    color: black;
     text-align: center;
     margin: 20px;
   }

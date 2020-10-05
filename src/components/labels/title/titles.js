@@ -4,7 +4,7 @@ import './titles.css'
 
 function Title(props) {
     return (
-        <div class="page-titles">{props.name}</div>
+            <div class="page-titles">{props.name}</div>
     );
 }
 
@@ -15,3 +15,4 @@ function SubTitle(props){
 }
 
 export default Title;
+export {SubTitle};

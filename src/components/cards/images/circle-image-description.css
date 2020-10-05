@@ -1,0 +1,27 @@
+/* .content{
+    display: block; 
+    padding: 20 auto;
+    margin: 0 40px 0 0;
+    line-height: 40px; 
+    align-items: center;
+} */
+
+.circleimage{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.name{
+    color: black;
+    font-size: 25px;
+    text-align: start;
+    font-weight: bold;
+}
+
+.description{
+    color: black;
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+}

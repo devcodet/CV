@@ -4,10 +4,10 @@ import Title from "../components/labels/title/titles";
 import ola from "../assets/images/ola.jpg";
 import CircleImageDescription from '../components/cards/images/circle-image-description';
 
-function Events() {
+function InspiringPeople() {
   return (
     <div className="App-header page">
-      <Title name="#events 📅" />
+      <Title name="#inspiring_people 🤩" />
         <div
           style={{
             width: "100%",
@@ -33,12 +33,15 @@ function Events() {
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>
-          <CircleImageDescription source={ola} description="ola"/>
         </div>
         <p/>
         <div style={{ display: "flex", margin: "0 auto" }}>
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>
+          <CircleImageDescription source={ola} description="ola"/>
+        </div>
+        <p/>
+        <div style={{ display: "flex", margin: "0 auto" }}>
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>
@@ -48,4 +51,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default InspiringPeople;

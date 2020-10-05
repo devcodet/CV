@@ -1,7 +1,10 @@
 .progress-bar-container{
     width: 100%;
     position: relative;
+    display: inline-block;
     text-align: center;
+    align-items: center;
+    align-content: center;
 }
 
 .progress-bar-image{
@@ -9,19 +12,19 @@
 }
 
 .progress-bar{
-    width: 95%;
+    width: 80%;
     display: 'block';
     overflow: "hidden";
-    position: absolute;
-    border-radius: 40px; 
+    border-radius: 50px; 
     height: 22px;
     background-color: #0000004d;
     bottom: 20px;
-    left: 8px;
+    left: 20px;
+    margin: 25px 0 0 10px;
 }
 
 .value{
     top: 0px;
-    left: 0px;
+    left: 10px;
     background-color: #000;
 }

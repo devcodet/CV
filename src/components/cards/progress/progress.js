@@ -2,18 +2,17 @@ import React, { useState } from 'react';
 
 import './progress.css'
 import '../big-card/big-card'
-import BigCard from '../big-card/big-card';
+import CircleLabel from '../circle-label/circle-label';
 
 function Progress(props) {
     return (
-        <div style={{width: "20%", margin:"10px"}}>
+        <div style={{width: "100%", display:"inline", margin: "0 20px 20px 20px"}}>
             <div className="progress-bar-container">
-                <BigCard source={props.source}/>
-                {/* <img className="progress-bar-image" src={props.source}/> */}
-                <div className="progress-bar">
+                <CircleLabel source={props.source}/>
+                {/* <div className="progress-bar">
                     <div className="progress-bar value" style={{width: props.value}}>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
