@@ -9,7 +9,7 @@ import Projects from './pages/projects';
 import Events from './pages/events';
 import Hobbies from './pages/hobbies';
 import InspiringPeople from './pages/inspiring_people';
-import Follow from './pages/follow';
+import Follow from './pages/follow/follow';
 
 //Components
 import Menu from './components/menu/menu.js';

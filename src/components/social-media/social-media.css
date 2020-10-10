@@ -1,7 +1,5 @@
 .social-menu {
   display: flex;
-  position: absolute;
-  bottom: 10px;
 }
 
 .social-item {

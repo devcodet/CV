@@ -8,7 +8,7 @@ function Events() {
   return (
     <div className="App-header page">
       <Title name="#events 📅" />
-        <div
+        {/* <div
           style={{
             width: "100%",
             height: "50%",
@@ -27,7 +27,7 @@ function Events() {
             paddingBottom: "120px",
           }}
         >
-        </div>
+        </div> */}
         <div style={{ display: "flex", margin: "0 auto" }}>
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>
@@ -43,7 +43,11 @@ function Events() {
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>
         </div>
-        
+        <div style={{display:"flex"}}>
+          <img style={{ width: "30%", marginTop:"5%", marginRight: "5%"}} src={ola}></img>
+          <img style={{ width: "30%", marginTop:"5%", marginRight: "5%"}} src={ola}></img>
+          <img style={{ width: "30%", marginTop:"5%", marginRight: "5%"}} src={ola}></img>
+        </div>
     </div>
   );
 }

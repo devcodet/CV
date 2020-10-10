@@ -72,6 +72,11 @@ function Projects() {
           </div>
         </div>
       </div>
+        <div style={{display:"flex"}}>
+          <img style={{ width: "30%", marginTop:"5%", marginRight: "5%"}} src={ola}></img>
+          <img style={{ width: "30%", marginTop:"5%", marginRight: "5%"}} src={ola}></img>
+          <img style={{ width: "30%", marginTop:"5%", marginRight: "5%"}} src={ola}></img>
+        </div>
     </div>
   );
 }

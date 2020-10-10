@@ -8,7 +8,7 @@ function InspiringPeople() {
   return (
     <div className="App-header page">
       <Title name="#inspiring_people 🤩" />
-        <div
+        {/* <div
           style={{
             width: "100%",
             height: "50%",
@@ -26,8 +26,8 @@ function InspiringPeople() {
             position: "relative",
             paddingBottom: "120px",
           }}
-        >
-        </div>
+        > 
+        </div>*/}
         <div style={{ display: "flex", margin: "0 auto" }}>
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>

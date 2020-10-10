@@ -20,11 +20,8 @@ function AboutMe() {
                             Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec
                             Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec
                             Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec
-                            Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec
-                            Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec
                             Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec"/>
             <div style={{position:"absolute", bottom:"0px"}}>
-                <img src={ola} style={{height: "250px", width: "250px", marginRight: "30px"}}/>
                 <img src={ola} style={{height: "250px", width: "250px", marginRight: "30px"}}/>
                 <img src={ola} style={{height: "250px", width: "250px", marginRight: "30px"}}/>
                 <img src={ola} style={{height: "250px", width: "250px", marginRight: "30px"}}/>

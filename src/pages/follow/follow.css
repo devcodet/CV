@@ -1,0 +1,42 @@
+.page-content{
+    display: flex;
+}
+
+.form-content {
+  display: flex;
+  height: 100%;
+  margin: 0 40px 0 40px;
+}
+
+.control-form {
+  color: black;
+  display: inline;
+}
+
+.control-form input {
+  width: 100%;
+  font-size: 30px;
+}
+
+.control-form button {
+  width: 100%;
+  font-size: 30px;
+}
+
+.control-form textarea {
+  width: 100%;
+  height: 300px;
+  resize: none;
+  font-size: 30px;
+}
+
+.suggestion-image {
+  width: 50%;
+  height: 100%;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
