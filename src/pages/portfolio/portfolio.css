@@ -1,0 +1,15 @@
+.portfolio-container{
+    display: flex;
+    width: 100%;
+}
+
+.portfolio-item-container{
+    height: 100%;
+    position: relative;
+    margin-top:5%;
+}
+
+.item{
+    width: 30%;
+    margin-right: 5%;
+}

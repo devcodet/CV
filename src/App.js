@@ -3,12 +3,12 @@ import './App.css';
 
 //Pages
 import Homepage from './pages/homepage';
-import AboutMe from './pages/about_me';
-import Tools from './pages/tools';
-import Projects from './pages/projects';
-import Events from './pages/events';
-import Hobbies from './pages/hobbies';
-import InspiringPeople from './pages/inspiring_people';
+import AboutMe from './pages/about_me/about_me';
+import Tools from './pages/tools/tools';
+import Portfolio from './pages/portfolio/portfolio';
+import Events from './pages/events/events';
+import Hobbies from './pages/hobbies/hobbies';
+import InspiringPeople from './pages/inspiring_people/inspiring_people';
 import Follow from './pages/follow/follow';
 
 //Components
@@ -22,7 +22,7 @@ function App() {
       <Homepage/>
       <AboutMe/>
       <Tools/>
-      <Projects/>
+      <Portfolio/>
       <Events/>
       <Hobbies/>
       <InspiringPeople/>

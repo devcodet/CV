@@ -1,0 +1,16 @@
+.features-items-container{
+    position: relative;
+    display: flex;
+    margin-top: 175px;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-items-container .item{
+    margin-right: 5%;
+}
+
+.circle-image-row{
+   display: flex;
+   margin: 0 auto;
+}

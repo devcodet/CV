@@ -1,13 +1,16 @@
 import React from "react";
-import Title from "../components/labels/title/titles";
+import Title from "../../components/labels/title/titles";
 
-import ola from "../assets/images/ola.jpg";
-import CircleImageDescription from '../components/cards/images/circle-image-description';
+import ola from "../../assets/images/ola.jpg";
+import CircleImageDescription from '../../components/cards/images/circle-image-description';
 
-function Events() {
+import "./inspiring_people.css"
+import "../global.css";
+
+function InspiringPeople() {
   return (
     <div className="App-header page">
-      <Title name="#events 📅" />
+      <Title name="#inspiring_people 🤩" />
         {/* <div
           style={{
             width: "100%",
@@ -26,30 +29,29 @@ function Events() {
             position: "relative",
             paddingBottom: "120px",
           }}
-        >
-        </div> */}
-        <div style={{ display: "flex", margin: "0 auto" }}>
-          <CircleImageDescription source={ola} description="ola"/>
+        > 
+        </div>*/}
+        <div class="circle-image-row">
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>
         </div>
         <p/>
-        <div style={{ display: "flex", margin: "0 auto" }}>
-          <CircleImageDescription source={ola} description="ola"/>
-          <CircleImageDescription source={ola} description="ola"/>
+        <div class="circle-image-row">
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>
           <CircleImageDescription source={ola} description="ola"/>
         </div>
-        <div style={{display:"flex"}}>
-          <img style={{ width: "30%", marginTop:"5%", marginRight: "5%"}} src={ola}></img>
-          <img style={{ width: "30%", marginTop:"5%", marginRight: "5%"}} src={ola}></img>
-          <img style={{ width: "30%", marginTop:"5%", marginRight: "5%"}} src={ola}></img>
+        <p/>
+        <div class="circle-image-row">
+          <CircleImageDescription source={ola} description="ola"/>
+          <CircleImageDescription source={ola} description="ola"/>
+          <CircleImageDescription source={ola} description="ola"/>
         </div>
+        
     </div>
   );
 }
 
-export default Events;
+export default InspiringPeople;

@@ -1,0 +1,16 @@
+.tools-container{
+    display: flex;
+}
+
+.tools-container .suggestion-image{
+    width:500px;
+    height:500px;
+}
+
+.tools-container .progress-container{
+    display: flex;
+}
+
+.skills-container{
+    margin: 0 0 0 40px
+}

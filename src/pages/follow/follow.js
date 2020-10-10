@@ -6,25 +6,24 @@ import SocialMedia from '../../components/social-media/social-media'
 
 import CircleImageDescription from '../../components/cards/images/circle-image-description';
 
-import './follow.css'
+import './follow.css';
+import '../global.css';
 
 function Follow() {
     return (
         <div className="App-header page">
             <Title name="#chat_with_me 📞"/>
 
-            <div class="page-content">
+            <div class="follow-container">
                 <img src={ola} class="suggestion-image"/>
                 <div class="form-content">
                     <form id="contact-form">
                         <div className="form-group" class="control-form">
                             <input type="text" className="form-control" placeholder="Name"/>
                         </div>
-                        <p></p>
                         <div className="form-group" class="control-form">
                             <input type="email" className="form-control" placeholder="Email"/>
                         </div>
-                        <p></p>
                         <div className="form-group" class="control-form">
                             <input type="text" className="form-control" placeholder="Subject"/>
                         </div>

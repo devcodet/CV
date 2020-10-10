@@ -1,42 +1,45 @@
 import React, { useState } from 'react';
 
-import Title from '../components/labels/title/titles';
-import Progress from '../components/cards/progress/progress';
-import SkillItem from '../components/list-items/skill-item';
+import Title from '../../components/labels/title/titles';
+import Progress from '../../components/cards/progress/progress';
+import SkillItem from '../../components/list-items/skill-item';
+
+import './tools.css';
+import '../global.css';
 
 //ImageSource
-import ola from '../assets/images/ola.jpg'
+import ola from '../../assets/images/ola.jpg'
 
 function Tools() {
     return (
       <div className="App-header page">
           <p></p>
           <Title name="#tools 🔧"/>
-          <div style={{display: "flex"}}>
-            <img src={ola} style={{width:"500px", height:"500px"}}/>
+          <div class="tools-container">
+            <img src={ola} class="suggestion-image"/>
             <div style={{display: "inline"}}>
-              <div style={{display: "flex"}}>
+            <div class="progress-container">
                 <Progress value="10%" source={ola}/>
                 <Progress value="10%" source={ola}/>
                 <Progress value="10%"/>
               </div>
-              <div style={{display: "flex"}}>
+              <div class="progress-container">
                 <Progress value="20%"/>
                 <Progress value="10%"/>
                 <Progress value="10%"/>
               </div>
-              <div style={{display: "flex"}}>
+              <div class="progress-container">
                 <Progress value="10%"/>
                 <Progress value="20%"/>
                 <Progress value="10%"/>
               </div>
-              <div style={{display: "flex"}}>
+              <div class="progress-container">
                 <Progress value="10%"/>
                 <Progress value="20%"/>
                 <Progress value="10%"/>
               </div>
             </div>
-            <div style={{margin: "0 0 0 40px"}}>
+            <div class="skills-container">
                   <SkillItem source={ola}/>
                   <SkillItem source={ola}/>
                   <SkillItem source={ola}/>
@@ -45,31 +48,31 @@ function Tools() {
           </div>
           <p></p>
           <Title name="#languages 👨‍💻"/>
-          <div style={{display: "flex"}}>
-          <img src={ola} style={{width:"500px", height:"500px"}}/>
+          <div class="tools-container">
+          <img src={ola} class="suggestion-image"/>
           <div style={{display: "inline"}}>
-            <div style={{display: "flex"}}>
+            <div class="progress-container">
               <Progress value="10%"/>
               <Progress value="20%"/>
               <Progress value="10%"/>
             </div>
-            <div style={{display: "flex"}}>
+            <div class="progress-container">
               <Progress value="20%"/>
               <Progress value="10%"/>
               <Progress value="10%"/>
             </div>
-            <div style={{display: "flex"}}>
+            <div class="progress-container">
               <Progress value="10%"/>
               <Progress value="20%"/>
               <Progress value="10%"/>
             </div>
-            <div style={{display: "flex"}}>
+            <div class="progress-container">
                 <Progress value="10%"/>
                 <Progress value="20%"/>
                 <Progress value="10%"/>
             </div>
           </div>
-            <div style={{margin: "0 0 0 40px"}}>
+            <div class="skills-container">
                   <SkillItem source={ola}/>
                   <SkillItem source={ola}/>
                   <SkillItem source={ola}/>
@@ -77,10 +80,10 @@ function Tools() {
             </div>
             </div>
           <Title name="#skills 🤹"/>
-          <div style={{display: "flex"}}>
-            <img src={ola} style={{width:"500px", height:"565px"}}/>
+          <div class="tools-container">
+            <img src={ola} class="suggestion-image"/>
             <div style={{margin: "0 0 0 50px", display: "flex"}}>
-              <div style={{display: "flex"}}>
+              <div class="progress-container">
                 <div>
                   <SkillItem source={ola}/>
                   <SkillItem source={ola}/>
@@ -88,7 +91,7 @@ function Tools() {
                   <SkillItem source={ola}/>
                   <SkillItem source={ola}/>
                 </div>
-                <div style={{margin: "0 0 0 40px"}}>
+                <div class="skills-container">
                   <SkillItem source={ola}/>
                   <SkillItem source={ola}/>
                   <SkillItem source={ola}/>
