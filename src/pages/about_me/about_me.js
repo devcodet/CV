@@ -46,8 +46,6 @@ function GetSmallImages(){
       )
   }
 
-debugger
-
   return <div class="small-images-container">{images}</div>
 }
 
