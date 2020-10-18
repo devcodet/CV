@@ -3,14 +3,12 @@
 import React from "react";
 import './feature-item.css'
 
-import ola from '../../../assets/images/ola.jpg'
-
 function FeatureItem(props) {
     return (
         <div>
-            <img src={ola} style={{height: "350px", width: "500px"}}/>
-            <div style={{color:"black"}}>ola</div>
-            <div style={{color:"black", fontSize:"15px"}}>ola, ola, ola Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec</div>
+            <img src={props.image} style={{height: "350px", width: "500px"}}/>
+            <div class="text">{props.title}</div>
+            <div class="small text">{props.text}</div>
         </div>
         );
     }
