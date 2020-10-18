@@ -51,8 +51,10 @@ function GetSmallImages(){
 
 function AboutMe() {
 
-  var title = "#about_me 😎";
-  var subTitle = "know me more";
+  var titles = 
+  [
+    { "title":"#about_me 😎", "description":"know me more" }
+  ]
 
   var description = "Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec";
 
@@ -68,7 +70,7 @@ function AboutMe() {
 
   return (
     <div className="App-header page">
-        <Title name={title} description={subTitle}/>
+        <Title name={titles[0].title} description={titles[0].description}/>
           <div class="about-me-container">
             <div style={{ alignContent:"center"}}>
               <LongText text={description}/>
