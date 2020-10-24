@@ -23,7 +23,7 @@ function GetFeaturesItems()
   for (const [key, value] of Object.entries(features)) {
     featuresItems.push(
       <div class="item">
-        <FeatureItem image={value[0]} title={value[1]} text={value[2]}/>
+        <FeatureItem src={value[0]} title={value[1]} text={value[2]}/>
       </div>
     )
   }
