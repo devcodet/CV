@@ -1,5 +1,6 @@
 .tools-container{
     display: flex;
+    margin: 0;
 }
 
 .tools-container .suggestion-image{

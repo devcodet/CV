@@ -92,7 +92,9 @@ function Portfolio() {
               { courseGrid }
         </div>
       </div>
-      { items }
+      <div style={{margin: "auto"}}>
+        { items }
+      </div>
     </div>
   );
 }

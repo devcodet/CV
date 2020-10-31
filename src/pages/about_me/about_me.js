@@ -28,7 +28,7 @@ function GetFeaturesItems()
     )
   }
 
-  return <div class="features-items-container">{featuresItems}</div>
+  return <div class="features-items-container">{featuresItems}</div>;
 }
 
 function GetSmallImages(){
@@ -79,8 +79,10 @@ function AboutMe() {
             {suggestionImage}
           </div>
           <p></p>
-          {features}
-          {video}
+          <div style={{margin: "auto"}}>
+            {features}
+            {video}
+          </div>
       </div>
     );
   }

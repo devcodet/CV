@@ -4,6 +4,7 @@ import './circle-label.css'
 
 
 function CircleLabel(props) {
+    
     return (
         <div className="content">{props.name}</div>
     )
