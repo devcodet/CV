@@ -17,6 +17,7 @@
 .about-me-container .suggestion-image{
     width: 700px;
     height: 850px;
+    margin: auto;
 }
 
 .video-container{

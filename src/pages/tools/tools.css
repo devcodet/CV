@@ -6,6 +6,7 @@
 .tools-container .suggestion-image{
     width:500px;
     height:500px;
+    margin: auto 70px auto auto;
 }
 
 .tools-container .progress-container{
@@ -13,5 +14,8 @@
 }
 
 .skills-container{
-    margin: 0 0 0 40px
+    margin: 0 0 0 70px;
+}
+
+.skills-container img{
 }

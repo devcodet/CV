@@ -29,7 +29,7 @@ function GetSmallImages() {
 }
 
 function AboutMe() {
-  var title = { name: "#about_me 😎", description: "know me more" };
+  var title = { name: "#about_me 😎", description: "Find out a little more about me" };
 
   var description =
     "Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec";

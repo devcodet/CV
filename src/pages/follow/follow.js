@@ -3,8 +3,7 @@ import Title from "../../components/labels/title/titles";
 //ImageSource
 import ola from "../../assets/images/ola.jpg";
 import SocialMedia from "../../components/social-media/social-media";
-
-import GetGridCircleImages from "../../components/cards/images/circle-image-description";
+import CircleImageDescription, { GetGridCircleImages } from "../../components/cards/images/circle-image-description";
 
 import "./follow.css";
 import "../global.css";

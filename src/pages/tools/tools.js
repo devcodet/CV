@@ -104,8 +104,9 @@ function Tools() {
         <img src={ola} class="suggestion-image" />
         <div style={{ margin: "0 0 0 50px", display: "flex" }}>
           <div class="progress-container">
-            <div>{skills}</div>
+            <div>{skills}{skills}</div>
             <div class="skills-container">
+              {skills}
               {skills}
             </div>
           </div>
