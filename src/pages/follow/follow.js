@@ -10,7 +10,7 @@ import "./follow.css";
 import "../global.css";
 
 function Follow() {
-  var title = { name: "#chat_with_me 📞", description: "know me more" };
+  var title = { name: "#chat_with_me 💬", description: "know me more" };
 
   var imagesGrid = GetGridCircleImages([
     [

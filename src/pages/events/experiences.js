@@ -2,7 +2,7 @@ import React from "react";
 import Title from "../../components/labels/title/titles";
 
 import ola from "../../assets/images/ola.jpg";
-import GetGridCircleImages from "../../components/cards/images/circle-image-description";
+import { GetGridCircleImages } from "../../components/cards/images/circle-image-description";
 import GetListFeatureItem from "../../components/cards/feature-item/feature-item";
 
 import "./experiences.css";
