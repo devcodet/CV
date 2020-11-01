@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
 import Title from "../../components/labels/title/titles";
-import Progress from "../../components/cards/progress/progress";
-import SkillItem from "../../components/list-items/skill-item";
+import GetProgressGrid from "../../components/cards/progress/progress";
+// import Progress from "../../components/cards/progress-circle/react-progress-circle";
+import GetSkillsList from "../../components/list-items/skill-item";
 
 import "./tools.css";
 import "../global.css";
@@ -10,43 +11,13 @@ import "../global.css";
 //ImageSource
 import ola from "../../assets/images/ola.jpg";
 
-function GetProgressGrid(values) {
-  var grid = [];
-
-  for (const [key, value] of Object.entries(values)) {
-    var row = [];
-    
-    for (const item of Object.entries(value)) {
-      row.push(
-        <Progress name={item[1].name}/>
-        );
-      }
-
-      grid.push(
-        <div class="progress-container">
-          {row}
-        </div>);
-    }
-  return <div style={{display: "inline"}}>{grid}</div>;
-}
-
-function GetSkillsList(values){
-  var list = []
-
-  for (const [key, item] of Object.entries(values)) {
-    list.push(<SkillItem source={item["src"]} title={item["title"]} description={item["description"]}/>)
-  }
-
-  return list;
-}
-
 function Tools() {
 
   var titles = 
   [
     { "title": "#tools 🔧", "description" : "tools"},
     { "title": "#languages 👨‍💻", "description" : "languages"},
-    { "title": "skills 🤹", "description" : "skills"},
+    { "title": "#skills 🤹", "description" : "skills"},
   ]
 
   var toolsGrid = GetProgressGrid(

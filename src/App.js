@@ -6,7 +6,7 @@ import Homepage from './pages/homepage';
 import AboutMe from './pages/about_me/about_me';
 import Tools from './pages/tools/tools';
 import Portfolio from './pages/portfolio/portfolio';
-import Events from './pages/events/events';
+import Expirences from './pages/events/experiences';
 import Hobbies from './pages/hobbies/hobbies';
 import InspiringPeople from './pages/inspiring_people/inspiring_people';
 import Follow from './pages/follow/follow';
@@ -23,7 +23,7 @@ function App() {
       <AboutMe/>
       <Tools/>
       <Portfolio/>
-      <Events/>
+      <Expirences/>
       <Hobbies/>
       <InspiringPeople/>
       <Follow/>

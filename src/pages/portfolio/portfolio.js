@@ -4,7 +4,7 @@ import Title, { SubTitle } from "../../components/labels/title/titles";
 
 import ola from "../../assets/images/ola.jpg";
 
-import FeatureItem from '../../components/cards/feature-item/feature-item';
+import GetListFeatureItem from '../../components/cards/feature-item/feature-item';
 
 import './portfolio.css';
 import '../global.css';
@@ -20,7 +20,7 @@ function GetGrid(values) {
         <img class="item" src={item[1].src}/>
         );
       }
-
+ 
       grid.push(
         <div class="portfolio-item-container">
           {row}
@@ -28,22 +28,13 @@ function GetGrid(values) {
     }
   return <div>{grid}</div>;
 }
-
-function GetList(values){
-  var list = []
-
-  for (const [key, item] of Object.entries(values)) {
-    list.push(
-      <div class="item">
-        <FeatureItem src={item["src"]} title={item["title"]} text={item["description"]}/>
-      </div>
-    );
-  }
-
-  return <div class="features-items-container">{list}</div>;
-}
-
+ 
 function Portfolio() {
+
+  var titles = [
+    { "name":"#projects 🚧", "description":"know me more" },
+    { "name":"#courses 🏫", "description":"know me more" }
+  ];
 
   var projects = 
   [
@@ -78,17 +69,17 @@ function Portfolio() {
 
   var courseGrid = GetGrid(courses);
 
-  var items = GetList(list);
+  var items = GetListFeatureItem(list);
 
   return (
     <div className="App-header page">
       <div class="portfolio-container">
         <div style={{ width: "50%" }}>
-          <Title alignment="center" name="#projects 🚧" />
+          <Title alignment="center" name={titles[0].name} description={titles[0].description} />
               { projectGrid }
         </div>
         <div style={{ width: "50%", left: "50%" }}>
-          <Title alignment="center" name="#courses 🏫" />
+          <Title alignment="center" name={titles[1].name} description={titles[1].description} />
               { courseGrid }
         </div>
       </div>

@@ -3,33 +3,12 @@ import React, { useState } from 'react';
 import Title, { SubTitle } from '../../components/labels/title/titles';
 import AdvImage from '../../components/cards/images/adv-image';
 import LongText from '../../components/labels/long-text/long-text';
-import FeatureItem from '../../components/cards/feature-item/feature-item';
+import GetListFeatureItem from '../../components/cards/feature-item/feature-item';
 //ImageSource
 import ola from '../../assets/images/ola.jpg';
 
 import './about_me.css';
 import '../global.css';
-
-function GetFeaturesItems()
-{
-  var features = { 
-    1:[ola, "alegfggdfgx","harry"], 
-    2:[ola, "liza","alex"], 
-    3:[ola, "fred", "harry"]
-  };
-
-  var featuresItems = [];
-
-  for (const [key, value] of Object.entries(features)) {
-    featuresItems.push(
-      <div class="item">
-        <FeatureItem src={value[0]} title={value[1]} text={value[2]}/>
-      </div>
-    )
-  }
-
-  return <div class="features-items-container">{featuresItems}</div>;
-}
 
 function GetSmallImages(){
   var imagesSources = { 
@@ -51,14 +30,17 @@ function GetSmallImages(){
 
 function AboutMe() {
 
-  var titles = 
-  [
-    { "title":"#about_me 😎", "description":"know me more" }
-  ]
+  var title = { "name":"#about_me 😎", "description":"know me more" }
 
   var description = "Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consec";
 
-  var features = GetFeaturesItems();
+  var featuresItems = GetListFeatureItem(
+    [
+      { title: "project1", description: "project1", src: ola },
+      { title: "project2", description: "project2", src: ola },
+      { title: "project2", description: "project2", src: ola },
+    ]
+  );
 
   var images = GetSmallImages();
 
@@ -70,7 +52,7 @@ function AboutMe() {
 
   return (
     <div className="App-header page">
-        <Title name={titles[0].title} description={titles[0].description}/>
+        <Title name={title.name} description={title.description}/>
           <div class="about-me-container">
             <div style={{ alignContent:"center"}}>
               <LongText text={description}/>
@@ -80,7 +62,7 @@ function AboutMe() {
           </div>
           <p></p>
           <div style={{margin: "auto"}}>
-            {features}
+            {featuresItems}
             {video}
           </div>
       </div>

@@ -1,20 +1,4 @@
-.content{
-    border-radius: 50%;
-    border-color: black;
-    border-width: 6px;
-    border-style: solid;
-    height: 100px;
-    width: 100px;
-    position: relataive;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;   
-    color: black;
-}
-
-.label{
-    align-items: center;
-    justify-content: center;
-}
+.content {
+    fill:transparent;
+    stroke: #7FFFD4;
+  }

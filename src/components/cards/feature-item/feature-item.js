@@ -1,15 +1,32 @@
-
-
 import React from "react";
-import './feature-item.css'
+import "./feature-item.css";
 
 function FeatureItem(props) {
-    return (
-        <div>
-            <img src={props.src} style={{height: "350px", width: "500px"}}/>
-            <div class="text">{props.title}</div>
-            <div class="small text">{props.text}</div>
+  return (
+    <div>
+      <img src={props.src} style={{ height: "350px", width: "500px" }} />
+      <div class="text">{props.title}</div>
+      <div class="small text">{props.text}</div>
+    </div>
+  );
+}
+
+function GetListFeatureItem(values) {
+    var list = [];
+    
+    for (const [key, item] of Object.entries(values)) {
+        list.push(
+            <div class="item">
+          <FeatureItem
+            src={item["src"]}
+            title={item["title"]}
+            text={item["description"]}
+            />
         </div>
-        );
+      );
     }
-    export default FeatureItem;        
+
+    return <div class="features-items-container">{list}</div>;
+}
+    
+export default GetListFeatureItem;

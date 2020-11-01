@@ -14,4 +14,15 @@ function SkillItem(props) {
     );
 }
 
-export default SkillItem;
+function GetSkillsList(values){
+    var list = []
+  
+    for (const [key, item] of Object.entries(values)) {
+      list.push(<SkillItem source={item["src"]} title={item["title"]} description={item["description"]}/>)
+    }
+  
+    return list;
+  }
+  
+
+export default GetSkillsList;
