@@ -5,10 +5,29 @@
 .social-item {
     height: 30px;
     width: 30px;
-    background-color: #bbb;
     border-radius: 50%;
     margin-bottom: 7.5px;
     border-color: black;
     border-width: 5px;
     margin: 5px;
   }
+
+.facebook{
+ background-color: #3B5998CC;
+}
+
+.instagram{
+  background-image: linear-gradient(190deg,#8C47BECC, #D32257CC, #F63100CC, #F7D301CC);
+}
+
+.linkedin{
+  background-color: #0073AFCC;
+}
+
+.twitter{
+  background-color: #1D9CEBCC;
+}
+
+.github{
+  background-color: #25292FCC;
+}

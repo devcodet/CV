@@ -12,22 +12,6 @@ import ola from "../../assets/images/ola.jpg";
 import "./about_me.css";
 import "../global.css";
 
-function GetSmallImages() {
-  var imagesSources = {
-    1: [ola],
-    2: [ola],
-    3: [ola],
-  };
-
-  var images = [];
-
-  for (const [key, value] of Object.entries(imagesSources)) {
-    images.push(<img src={value[0]} class="small-image" />);
-  }
-
-  return <div class="small-images-container">{images}</div>;
-}
-
 function AboutMe() {
   var title = { name: "#about_me 😎", description: "Find out a little more about me" };
 
@@ -42,7 +26,11 @@ function AboutMe() {
 
   var profileImage = <CircleImageDescription source={ola} title="djdjfd" description="fsdfdsfsdkf"/>;
 
-  var images = GetSmallImages();
+  var images =  <div class="small-images-container">
+                  <CircleImageDescription source={ola} title="djdjfd" description="fsdfdsfsdkf"/>;
+                  <CircleImageDescription source={ola} title="djdjfd" description="fsdfdsfsdkf"/>;
+                  <CircleImageDescription source={ola} title="djdjfd" description="fsdfdsfsdkf"/>;
+                </div>
 
   var suggestionImage = <img src={ola} class="suggestion-image" />;
 

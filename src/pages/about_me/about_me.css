@@ -10,8 +10,12 @@
 }
 
 .small-images-container{
-    position:absolute; 
+    position: relative;
+    display: flex; 
+    margin-bottom: auto;
+    align-items: flex-end;
     bottom:0px;
+    justify-content: end;
 }
 
 .about-me-container .suggestion-image{
