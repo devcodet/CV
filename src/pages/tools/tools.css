@@ -7,6 +7,7 @@
     width:500px;
     height:500px;
     margin: auto 70px auto auto;
+    object-fit: cover;
 }
 
 .tools-container .progress-container{

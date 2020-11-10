@@ -1,6 +1,14 @@
 .about-me-container{
     display: flex;
     position: relative;
+    margin: auto;
+}
+
+.long-text-container{
+    align-items: center;
+    width: 1000px;
+    justify-content: center;
+    margin: auto;
 }
 
 .small-image{
@@ -19,6 +27,10 @@
 }
 
 .about-me-container .suggestion-image{
+    position: relative;
+    object-fit: cover;
+    object-position: 70%;
+    float: right;
     width: 700px;
     height: 850px;
     margin: auto;

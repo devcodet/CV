@@ -42,6 +42,13 @@ function InspiringPeople() {
       <div style={{ margin: "auto" }}>
         {grid}
       </div>
+      <p></p>
+      <div style={{ margin: "auto", color: "black"}}>
+        "The people I most admire are those who never end."
+      </div>
+      <div style={{ margin: "auto", color: "black", fontSize: "15px"}}>
+        Almada Negreiros
+      </div>
     </div>
   );
 }

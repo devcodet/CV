@@ -11,6 +11,10 @@ import "../global.css";
 //ImageSource
 import ola from "../../assets/images/ola.jpg";
 
+import suggestion_tools from '../../assets/images/tools/tools_suggestion.jpg'
+import suggestion_languages from '../../assets/images/tools/languages_suggestion.jpg'
+import suggestion_skills from '../../assets/images/tools/skills_suggestion.jpg'
+
 function Tools() {
 
   var titles = 
@@ -84,7 +88,7 @@ function Tools() {
       <p></p>
       <Title name={titles[0].title} description={titles[0].description} />
       <div class="tools-container">
-        <img src={ola} class="suggestion-image" />
+        <img src={suggestion_tools} class="suggestion-image" />
         {toolsGrid}
         <div class="skills-container">
           {skills}
@@ -93,7 +97,7 @@ function Tools() {
       <p></p>
       <Title name={titles[1].title} description={titles[1].description} />
       <div class="tools-container">
-        <img src={ola} class="suggestion-image" />
+        <img src={suggestion_languages} class="suggestion-image" />
         {languagesGrid}
         <div class="skills-container">
           {skills}
@@ -101,7 +105,7 @@ function Tools() {
       </div>
       <Title name={titles[2].title} description={titles[2].description} />
       <div class="tools-container">
-        <img src={ola} class="suggestion-image" />
+        <img src={suggestion_skills} class="suggestion-image" />
         <div style={{ margin: "0 0 0 50px", display: "flex" }}>
           <div class="progress-container">
             <div>{skills}{skills}</div>
