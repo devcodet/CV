@@ -32,18 +32,18 @@ function GetGrid(values) {
 function Portfolio() {
 
   var titles = [
-    { "name":"#projects 🚧", "description":"know me more" },
-    { "name":"#courses 🏫", "description":"know me more" }
+    { "name":"#projects 🚧", "description":"Find out the projects that I participated" },
+    { "name":"#courses 🏫", "description":"Find out the courses that I enrolled" }
   ];
 
   var projects = 
   [
     [
-      { "title": "project1", "description" : "project1", "src":ola},
-      { "title": "project2", "description" : "project2", "src":ola},
+      { "title": "project1", "description" : "project1", "src":ola, "url": "" },
+      { "title": "project2", "description" : "project2", "src":ola, "url": "" },
     ],
     [
-      { "title": "project3", "description" : "project3", "src":ola},
+      { "title": "project3", "description" : "project3", "src":ola, "url": "" },
     ]
   ]
 

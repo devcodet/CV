@@ -23,6 +23,12 @@
     margin: 25px 0 0 10px;
 }
 
+.name-text{
+    color: green;
+    font-size: 25px;
+    word-wrap: none;
+}
+
 .value{
     top: 0px;
     left: 10px;
@@ -35,8 +41,9 @@
   }
 
 .circle-text{
-    margin-top: 33px;
-    margin-left: 30px;
+    margin-top: 25%;
+    margin-left: 40%;
+    font-size: 25px;
     position: absolute;
     color: green;
 }

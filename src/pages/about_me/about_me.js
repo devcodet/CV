@@ -24,7 +24,7 @@ function AboutMe() {
   var description1 = "I'm Bruno Duarte Felício Brás 😶";
   var description2 = "22 years old 🧑";
   var description3 = "Mid-level Programmer with 4 years of experience 💻⌨️";
-  var description4 = "I'm looking not for a regular job, but a life porpose, a pathway and a future 🛣️🙏";
+  var description4 = "Looking not for a regular job, but a life porpose, a pathway and a future 🛣️🙏";
   var description5 = "I like many different themes and areas 👨‍🏫";
   var description6 = "Open-minded 🧠";
   var description7 = "Committed to help 💪😍";

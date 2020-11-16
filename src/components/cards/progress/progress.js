@@ -10,7 +10,7 @@ function Progress(props){
     return (
         <div style={{width: "100%", display:"inline", margin: "0 20px 20px 50px"}}>
             <div className="progress-bar-container">
-                <div class="circle-text">90%</div>
+              <div class="circle-text">{props.percentage}%</div>
                 <svg height={120} width={120}>
                     <circle
                         className='content'
@@ -23,6 +23,7 @@ function Progress(props){
                     />
                 </svg>
             </div>
+            <div class="name-text">{props.name}</div>
         </div>
     );
 }
@@ -35,7 +36,7 @@ function GetProgressGrid(values){
     
     for (const item of Object.entries(value)) {
       row.push(
-        <Progress percentage={80}/>
+        <Progress percentage={item[1]["value"]} name={item[1]["name"]}/>
         );
       }
 
@@ -45,7 +46,7 @@ function GetProgressGrid(values){
         </div>);
     }
 
-  return <div style={{display: "inline"}}>{grid}</div>;
+  return <div style={{display: "inline", margin: "auto"}}>{grid}</div>;
 }
 
 export default GetProgressGrid;

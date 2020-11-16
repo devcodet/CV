@@ -3,6 +3,11 @@
     margin: auto;
 }
 
+.habilities-{
+    display: inline;
+    margin: auto;
+}
+
 .tools-container .suggestion-image{
     width:500px;
     height:500px;
