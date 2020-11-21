@@ -39,11 +39,11 @@ function Portfolio() {
   var projects = 
   [
     [
-      { "title": "project1", "description" : "project1", "src":ola, "url": "" },
-      { "title": "project2", "description" : "project2", "src":ola, "url": "" },
+      { "title": "project1", "description" : "project1", "src":ola, "url": ""},
+      { "title": "project2", "description" : "project2", "src":ola, "url": ""},
     ],
     [
-      { "title": "project3", "description" : "project3", "src":ola, "url": "" },
+      { "title": "project3", "description" : "project3", "src":ola, "url": ""},
     ]
   ]
 
