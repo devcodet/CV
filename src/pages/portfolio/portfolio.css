@@ -1,15 +1,99 @@
 .portfolio-container{
     display: flex;
     width: 100%;
+    margin: auto;
 }
 
 .portfolio-item-container{
     height: 100%;
     position: relative;
     margin-top:5%;
+    display: flex;
 }
 
 .item{
-    width: 30%;
+    margin: auto;
+    width: 31%;
     margin-right: 5%;
+}
+
+.item img{
+    width: 100%;
+    margin-right: 5%;
+}
+
+.item .image{
+    width: 100px;
+    height: 100px;
+    color: black;
+    margin: auto;
+}
+
+.item .title{
+    font-size: 40px;
+    color: black;
+}
+.item .description{
+    font-size: 15px;
+}
+
+.main-url{
+    color: black;
+    font-size: 15px;
+}
+
+.store-links{
+    margin: auto;
+    display: inline;
+    height: 50%;
+}
+
+.store-links .google-play{
+    margin: auto;
+    border-radius: 0%;
+    width: 50%;
+    height: 50%;
+}
+
+.store-links .app-store{
+    margin: auto;
+    border-radius: 0%;
+    width: 50%;
+    height: 50%;
+}
+
+.badge{
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-radius: 200px;
+    padding: 2px 10px;
+    display: block;
+    margin: 10px 35px 10px 35px;
+    line-height: 15px;  
+    color: black;
+}
+
+.api{
+    background-color:#32a87d;
+    color: white;
+}
+
+.frontend-api{
+    background-color:#32a87d;
+    color: white;
+}
+
+.db{
+    background-color:#fcba03;
+    color: white;
+}
+
+.app-mobile{
+    background-color:#c41606;
+    color: white;
+}
+
+.support-app-mobile{
+    background-color:#181ecc;
+    color: white;
 }

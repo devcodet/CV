@@ -7,21 +7,22 @@
 } */
 
 .circleimage{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
+    object-fit: cover;
 }
 
 .name{
     color: black;
-    font-size: 25px;
+    font-size: 15px;
     text-align: center;
     font-weight: bold;
 }
 
 .description{
     color: black;
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
     align-items: center;
 }

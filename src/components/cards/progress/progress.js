@@ -28,7 +28,7 @@ function Progress(props){
     );
 }
 
-function GetProgressGrid(values){
+function getProgressGrid(values){
     var grid = [];
 
   for (const [key, value] of Object.entries(values)) {
@@ -49,4 +49,4 @@ function GetProgressGrid(values){
   return <div style={{display: "inline", margin: "auto"}}>{grid}</div>;
 }
 
-export default GetProgressGrid;
+export default getProgressGrid;

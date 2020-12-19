@@ -1,0 +1,66 @@
+/* @keyframes float {
+  0% {
+    transform: translate(0px, 410px);
+    opacity: 0;
+  }
+
+  1% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0%);
+  }
+}
+
+
+@keyframes float-invert {
+  0% {
+    transform: translate(0px, -20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 100%);
+    opacity: 0;
+  }
+} */
+
+@keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 90%;
+  }
+}
+
+@keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 97%;
+  }
+}
+
+.floating-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: end;
+  color: #00b3ff;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  margin: 10px;
+}
+
+.fc {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}

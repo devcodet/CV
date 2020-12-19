@@ -19,7 +19,7 @@ function CircleImageDescription(props) {
   );
 }
 
-function GetGridCircleImages(values) {
+function getGridCircleImages(values) {
   var grid = [];
 
   for (const [key, value] of Object.entries(values)) {
@@ -29,9 +29,9 @@ function GetGridCircleImages(values) {
       row.push(
         <div style={{ margin: "auto" }}>
           <CircleImageDescription
-            source={value[1].src}
-            title={value[1].title}
-            description={value[1].description}
+            source={item[1].src}
+            title={item[1].title}
+            description={item[1].description}
           />
         </div>
       );
@@ -45,4 +45,4 @@ function GetGridCircleImages(values) {
 }
 
 export default CircleImageDescription;
-export { GetGridCircleImages };
+export { getGridCircleImages };

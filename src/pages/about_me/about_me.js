@@ -90,7 +90,7 @@ function AboutMe() {
       <p></p>
       <div style={{ margin: "auto" }}>
         {featuresItems}
-        {video}
+        {/* {video} */}
       </div>
     </div>
   );

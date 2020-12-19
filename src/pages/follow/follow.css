@@ -1,5 +1,6 @@
 .follow-container {
     display: flex;
+    margin: auto;
 }
 
 .form-content {
@@ -31,12 +32,28 @@
 }
 
 .follow-container .suggestion-image{
-  width: 50%;
+  width: 1000px;
   height: 100%;
 }
 
 .footer {
   position: relative;
   width: 100%;
+  height: 50%;
   margin: auto;
+}
+
+.icons-text{
+  color: black
+}
+
+.icons-image{
+  height: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .follow-container .suggestion-image{
+    width: 500px;
+    height: 100%;
+  }
 }
