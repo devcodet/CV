@@ -100,10 +100,11 @@ i18n
             ExperiencesSubTitle: "Events and Groups",
 
             FreeCodeCampMeetings: "FreeCodeCamp Meetings",
-            YouthDay: "Youth Day",
+            YouthDay: "Youth Day ",
             ChallengeRestart: "Desafio Restart by Jorge Coutinho",
+            CommunityDay: "Community Day 2019",
 
-            ToastmastersDescription: "Toastmasters is a non-profit organization that teaches public speaking and leadership development.",
+            ToastmastersDescription: "Toastmasters is a non-profit organization that teaches public speaking and leadership development. I am Logistics Director of my club",
 
             YouthGroupTitle: "Youth Group",
             YouthGroupDescription: "We carry out reflection and social intervention activities. Helping the Other and acting in Community!",
@@ -243,8 +244,9 @@ i18n
 
           FreeCodeCampMeetings: "Encontros FreeCodeCamp",
           YouthDay: "Jornada da Juventude ",
+          CommunityDay: "Community Day 2019",
  
-          ToastmastersDescription: "Toastmasters é uma organização sem fins lucrativos que ensina como falar em público e desenvolvimento de liderança.",
+          ToastmastersDescription: "Toastmasters é uma organização sem fins lucrativos que ensina como falar em público e desenvolvimento de liderança. Eu sou Diretor de Logística do meu clube",
  
           YouthGroupTitle: "Grupo de Jovens",
           YouthGroupDescription: "Realizamos atividades de reflexão e intervenção social. Ajudando o outro e atuando em Comunidade!",

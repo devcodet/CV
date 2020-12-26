@@ -23,6 +23,7 @@ import jdj2019 from "../../assets/images/expirences/jdj2019.jpg"
 
 import acanac from "../../assets/images/expirences/acanac.jpg"
 import restart from "../../assets/images/expirences/restart.png"
+import communityDay from "../../assets/images/expirences/communityDay.jpg"
 
 import { getGridCircleImages } from "../../components/cards/images/circle-image-description";
 import GetListFeatureItem from "../../components/cards/feature-item/feature-item";
@@ -53,6 +54,7 @@ function Expirences() {
     [
       { src: acanac, title: "CNE Acanac 2017", description: "" },
       { src: restart, title: "Desafio Restart by Jorge Coutinho", description: "" },
+      { src: communityDay, title: t('CommunityDay')}
     ]
   ]);
  
