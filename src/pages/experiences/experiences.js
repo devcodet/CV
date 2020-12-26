@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import Title from "../../components/labels/title/titles";
 
-import ola from "../../assets/images/ola.jpg";
+//import ola from "../../assets/images/ola.jpg";
 
 import toastMasters from "../../assets/images/expirences/Toasts.jpg";
 import youthGroup from "../../assets/images/expirences/YouthGroup.jpg";
@@ -29,22 +31,24 @@ import "./experiences.css";
 import "../global.css";
 
 function Expirences() {
-  var title = { "name":"#expirences 🌄", "description":"Events and Groups" }
+  const { t } = useTranslation();
+
+  var title = { "name":t('ExperiencesTitle'), "description":t('ExperiencesSubTitle')}
 
   var imagesGrid = getGridCircleImages([
     [
       { src: openSourceLisbon, title: "Coding Portugal 2019", description: "" },
       { src: faroDevDay2019, title: "Faro Dev Day 2019", description: "" },
-      { src: freeCodeCampMeetings, title: "FreeCodeCamp Meetings", description: "" },
+      { src: freeCodeCampMeetings, title: t('FreeCodeCampMeetings'), description: "" },
       { src: gdgLisbonDevFest2019, title: "GDG Lisbon Dev Fest 2019", description: "" },
       { src: gdgPortugalDevFest2020, title: "GDG Portugal Dev Fest 2020", description: "" },
     ],
     [
       { src: ubuconEurope2019, title: "Ubucon Europe 2019", description: "" },
-      { src: jdj2016, title: "Jornada Juventude 2016", description: "" },
-      { src: jdj2017, title: "Jornada Juventude 2017", description: "" },
-      { src: jdj2018, title: "Jornada Juventude 2018", description: "" },
-      { src: jdj2019, title: "Jornada Juventude 2019", description: "" },
+      { src: jdj2016, title: t('YouthDay') + "2016", description: "" },
+      { src: jdj2017, title: t('YouthDay') + "2017", description: "" },
+      { src: jdj2018, title: t('YouthDay') + "2018", description: "" },
+      { src: jdj2019, title: t('YouthDay') + "2019", description: "" },
     ],
     [
       { src: acanac, title: "CNE Acanac 2017", description: "" },
@@ -54,9 +58,9 @@ function Expirences() {
  
   var featuresItems = GetListFeatureItem(
     [
-      { title: "Toastmasters", description: "Toastmasters is a non-profit organization that teaches public speaking and leadership development.", src: toastMasters },
-      { title: "Youth Group", description: "We carry out reflection and social intervention activities. Helping the Other and acting in Community!", src: youthGroup },
-      { title: "Geek Sessions", description: "Geek Sessions is a networking event dedicated to sharing knowledge and experience of the technological community." , src: geekSessions },
+      { title: "Toastmasters", description: t('ToastmastersDescription'), src: toastMasters },
+      { title: t('YouthGroupTitle'), description: t('YouthGroupDescription'), src: youthGroup },
+      { title: "Geek Sessions", description: t('GeekSessionDescription') , src: geekSessions },
     ]
   );
 

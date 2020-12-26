@@ -22,10 +22,39 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
   margin-right: 50px;
   margin-left: 80px;
+}
+
+.switch-button{
+  position: relative;
+  display: block;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.switch-button div{
+  position: relative;
+  display: inline-block;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.switch-button div.selected {
+  background-color: #00B2FF;
+  color: #f9f9f9;
+}
+
+.languages-container{
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
 
 .page{
@@ -35,6 +64,11 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.quotes{
+  color: black;
+  font-size: 30px;
 }
 
 ::-webkit-scrollbar{
@@ -49,13 +83,4 @@
 ::-webkit-scrollbar-track{
   border-radius: 500px;
   background-color: #eaeaea;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

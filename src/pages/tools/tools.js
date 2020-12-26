@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import Title from "../../components/labels/title/titles";
 import getProgressGrid from "../../components/cards/progress/progress";
@@ -7,9 +8,6 @@ import GetSkillsList from "../../components/list-items/skill-item";
 
 import "./tools.css";
 import "../global.css";
-
-//ImageSource
-import ola from "../../assets/images/ola.jpg";
 
 import suggestion_tools from "../../assets/images/tools/tools_suggestion.jpg";
 import suggestion_languages from "../../assets/images/tools/languages_suggestion.jpg";
@@ -27,23 +25,22 @@ import shield from "../../assets/images/tools/shield.svg";
 // import balance from "../../assets/images/tools/balance.svg";
 // import plus from "../../assets/images/tools/plus.svg";
 
-import xamarin from "../../assets/images/skills_icons/xamarin.png";
-import android from "../../assets/images/skills_icons/android.svg";
-import ios from "../../assets/images/skills_icons/apple.svg";
-import database from "../../assets/images/skills_icons/database.svg";
-
 function Tools() {
+  const { t, i18n } = useTranslation();
+
   var titles = [
     {
-      title: "#tools 🔧",
-      description: "Find out the tools that I use or have used",
+      title: t("ToolsTitle"),
+      description: t("ToolsSubTitle"),
     },
     {
-      title: "#languages 👨‍💻",
-      description:
-        "Find out the languages that I'm programming or have programmed",
+      title: t("LanguagesTitle"),
+      description: t("LanguagesSubTitle"),
     },
-    { title: "#skills 🤹", description: "My skills set" },
+    {
+      title: t('SkillsTitle'),
+      description: t('SkillsSubTitle'),
+    },
   ];
 
   var toolsGrid = getProgressGrid([
@@ -56,7 +53,7 @@ function Tools() {
     [
       { value: 60, name: "Microsoft SQL SSMS" },
       { value: 30, name: "Adobe XD" },
-    ]
+    ],
   ]);
 
   var languagesGrid = getProgressGrid([
@@ -69,7 +66,7 @@ function Tools() {
     [
       { value: 35, name: "JavaScript" },
       { value: 30, name: "HTML/CSS" },
-    ]
+    ],
   ]);
 
   // var toolsSkills = GetSkillsList(
@@ -93,49 +90,39 @@ function Tools() {
   var softSkills = GetSkillsList([
     {
       src: team,
-      title: "Trabalhador de Equipa",
-      description:
-        "Considero que o trabalho de equipa é fundamental para o sucesso e para o crescimento, com vista a isso tenho dedicado a saber lidar e compreender vários tipos de pessoas ao longo do tempo, representativo, nos projetos em que participei e que tenho realizado.",
-      description2:
-        "Tanto no trabalho, como em tantas outras atividades que desenvolvo nos meus tempos livres.",
+      title: t('TeamWorkerTitle'),
+      description: t('TeamWorkerDescription1'),
+      description2: t('TeamWorkerDescription2')
     },
 
     {
       src: search,
-      title: "Curioso",
-      description: "A curiosidade inspira-me a sempre ir mais além.",
-      description2:
-        "Tenho sempre a necessidade de saber como é um sistema ou serviço funciona, além de saber, tudo o que aconteceu e os processos envolvidos, bem como, tudo o que me rodeia.",
-      description3: "Conhecer o mundo e muito para além deste",
+      title: t('CuriousTitle'),
+      description: t('CuriousDescription1'),
+      description2: t('CuriousDescription2'),
+      description3: t('CuriousDescription3')
     },
 
     {
       src: communication,
-      title: "Comunicador Eficaz",
-      description:
-        "Tenho uma paixão de conseguir transmitir tudo aquilo que gosto e que conheço, seja para informação seja para o ajudar. Gosto imenso de-me expressar e dar a conhecer.",
-      description2: "Gosto imenso de-me expressar e dar a conhecer.",
-      description3:
-        "Embora, tenha algumas limitações ao nivel da linguagem e fluidez do meu discurso, considero que consigo passar a minha mensagem",
+      title: t('EffectiveCommunicatorTitle'),
+      description: t('EffectiveCommunicatorDescription1'),
+      description2: t('EffectiveCommunicatorDescription2'),
+      description3: t('EffectiveCommunicatorDescription3'),
     },
 
     {
       src: heart,
-      title: "Prestável e Servidor",
-      description:
-        "Dou tudo o que tenho a oferecer ao outro, prova disso, são as atividades que tenho realizado, nos meus tempos livres.",
-      description2:
-        "Embora, tenha que cuidar de mim, consigo sempre que o outro receba a minha ajuda no seu desenvolvimento e quem diz outros, diz instituições.",
-      description3:
-        "Devo dizer que é gosto enorme poder ajudar as outras pessoas.",
+      title: t('HelpfulServerTitle'),
+      description: t('HelpfulServerDescription1'),
+      description2: t('HelpfulServerDescription2'),
+      description3: t('HelpfulServerDescription3')
     },
-
     {
       src: shield,
-      title: "Resiliente",
-      description: '"Acabar quando acabei e não quando estou cansado".',
-      description2:
-        "Este é o meu lema, é sobre acabar o que têm de ser acabado, não é sobre mim, mas é sobre todos aqueles que podem depender de mim.",
+      title: t('ResilientTitle'),
+      description: t('ResilientDescription1'),
+      description2: t('ResilientDescription2')
     },
 
     // {

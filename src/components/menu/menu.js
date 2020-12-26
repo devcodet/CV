@@ -7,7 +7,6 @@ function Menu() {
       <div class="menu-item active"></div>
       <div class="menu-item"></div>
       <div class="menu-item"></div>
-      <div class="menu-item"></div>
     </div>
   );
 }

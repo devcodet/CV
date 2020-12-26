@@ -1,7 +1,6 @@
 import React from "react";
 import Title from "../../components/labels/title/titles";
-
-import ola from "../../assets/images/ola.jpg";
+import { useTranslation } from "react-i18next";
 
 import fernandoPessoa from "../../assets/images/persons/fernandoPessoa.jpg";
 import jorgeCoutinho from "../../assets/images/persons/jorgeCoutinho.jpg";
@@ -20,35 +19,29 @@ import "./inspiring_people.css";
 import "../global.css";
 
 function InspiringPeople() {
+  const { t } = useTranslation();
+
   var title = {
-    name: "#inspiring_people 🤩",
-    description: "These people has inspired me to go futher",
+    name: t('InspiringPeopleTitle'),
+    description: t('InspiringPeopleSubTitle'),
   };
 
   var grid = getGridCircleImages([
     [
-      {
-        src: fernandoPessoa,
-        title: "Fernando Pessoa",
-        description: "Poet, Writer and Philosopher",
-      },
-      {
-        src: jorgeCoutinho,
-        title: "Jorge Coutinho",
-        description: "Coach and Human Development",
-      },
-      { src: joeBiden, title: "Joe Biden", description: "USA President" },
-      { src: kamalaHarris, title: "Kamala Harris", description: "USA Vice-President" },
+      { src: fernandoPessoa,title: "Fernando Pessoa", description: t('FernandoPessoaDescription') },
+      { src: jorgeCoutinho, title: "Jorge Coutinho", description: t('JorgeCoutinhoDescription') },
+      { src: joeBiden, title: "Joe Biden", description: t('JoeBidenDescription') },
+      { src: kamalaHarris, title: "Kamala Harris", description: t('KamalaHarrisDescription') },
     ],
     [
-      { src: papaFrancisco, title: "Papa Francisco", description: "Head of the Catholic Church" },
-      { src: danielGuerreiro, title: "Daniel Guerreiro", description: "Behavioral Coach" },
-      { src: neilDeGrasseTyson, title: "Neil deGrasse Tyson", description: "Astrophysicist" },
-      { src: shephenHalwing, title: "Shephen Halwing", description: "Physicist and Cosmologist" },
+      { src: papaFrancisco, title: "Papa Francisco", description: t('PapaFransciscoDescription')},
+      { src: danielGuerreiro, title: "Daniel Guerreiro", description: t('DanielGuerreiroDescription') },
+      { src: neilDeGrasseTyson, title: "Neil deGrasse Tyson", description: t('NeildeGrasseTysonDescription') },
+      { src: shephenHalwing, title: "Shephen Halwing", description: t('ShephenHalwingDescription') },
     ],
     [
-      { src: obama, title: "Obama", description: "44th USA President" },
-      { src: billGates, title: "Bill Gates", description: "Business Magnate" },
+      { src: obama, title: "Obama", description: t('ObamaDescription') },
+      { src: billGates, title: "Bill Gates", description: t('BillGatesDescription')},
     ],
   ]);
 
@@ -58,9 +51,7 @@ function InspiringPeople() {
       <div style={{ margin: "auto" }}>{grid}</div>
       <p></p>
       <div style={{ margin: "auto" }}>
-        <div style={{ color: "black" }}>
-          "The people I most admire are those who never end."
-        </div>
+        <div class="quotes">{t('MostAdmireQuote')}</div>
         <div style={{ color: "black", fontSize: "15px" }}>Almada Negreiros</div>
       </div>
     </div>

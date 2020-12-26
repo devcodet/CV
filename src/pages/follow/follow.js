@@ -1,7 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import Title from "../../components/labels/title/titles";
 //ImageSource
-import ola from "../../assets/images/ola.jpg";
 import SocialMedia from "../../components/social-media/social-media";
 
 import followMe from "../../assets/images/followMe.jpg";
@@ -13,7 +14,9 @@ import "./follow.css";
 import "../global.css";
 
 function Follow() {
-  var title = { name: "#chat_with_me 💬", description: "Let's talk 😁" };
+  const { t } = useTranslation();
+
+  var title = { name: t('ChatWithMeTitle'), description: t('ChatWithMeSubTitle') };
 
   return (
     <div className="App-header page">

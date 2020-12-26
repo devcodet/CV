@@ -6,8 +6,10 @@ import LongText from "../../components/labels/long-text/long-text";
 import GetListFeatureItem from "../../components/cards/feature-item/feature-item";
 import CircleImageDescription from "../../components/cards/images/circle-image-description";
 
+import { useTranslation } from "react-i18next";
+
 //ImageSource
-import ola from "../../assets/images/ola.jpg";
+//import ola from "../../assets/images/ola.jpg";
 import profile_image from '../../assets/images/profile/profile_image.png'
 import suggestion_image from '../../assets/images/profile/suggestion_image.jpg'
 
@@ -19,49 +21,45 @@ import "./about_me.css";
 import "../global.css";
 
 function AboutMe() {
-  var title = { name: "#about_me 😎", description: "Find out a little more about me" };
+  const { t } = useTranslation();
 
-  var description1 = "I'm Bruno Duarte Felício Brás 😶";
-  var description2 = "22 years old 🧑";
-  var description3 = "Mid-level Programmer with 4 years of experience 💻⌨️";
-  var description4 = "Looking not for a regular job, but a life porpose, a pathway and a future 🛣️🙏";
-  var description5 = "I like many different themes and areas 👨‍🏫";
-  var description6 = "Open-minded 🧠";
-  var description7 = "Committed to help 💪😍";
-  var description8 = "Passion ❤";
-  var description9 = "Networking 🌐";
-  var description10 = "Ready to Learn new things 📖"
+  var title = { name:t('AboutMeTitle'), description: t('AboutMeSubTitle') };
+
+  var description1 = t('ImBrunoFullName');
+  var description2 = t('YearsOld');
+  var description3 = t('Experience');
+  var description4 = t('Propose');
+  var description5 = t('ManyAreas');
+  var description6 = t('OpenMinded');
+  var description7 = t('CommitedHelp');
+  var description8 = t('Passion');
+  var description9 = t('Networking');
+  var description10 = t('ReadyNewThings');
   
 
   var featuresItems = GetListFeatureItem([
-    { title: "Mobile Development", description: "iOS and Android apps", src: mobile_dev },
-    { title: "Server Development", description: "APIs", src: api_dev },
-    { title: "Desktop Development", description: "Apps for PC", src: desktop_dev },
+    { title: t('MobileDevelopmentTitle'), description:  t('MobileDevelopmentSubTitle'), src: mobile_dev },
+    { title: t('ServerDevelopmentTitle'), description: t('ServerDevelopmentSubTitle'), src: api_dev },
+    { title: t('DesktopDevelopmentTitle'), description: t('DesktopDevelopmentSubTitle'), src: desktop_dev },
   ]);
 
-  var profileImage = <CircleImageDescription source={profile_image} title="Bruno Brás" description="That's me :)"/>;
-
-  var images =  <div class="small-images-container">
-                  <CircleImageDescription source={ola} title="djdjfd" description="fsdfdsfsdkf"/>;
-                  <CircleImageDescription source={ola} title="djdjfd" description="fsdfdsfsdkf"/>;
-                  <CircleImageDescription source={ola} title="djdjfd" description="fsdfdsfsdkf"/>;
-                </div>
+  var profileImage = <CircleImageDescription IsImageProfile="true" source={profile_image} title="Bruno Brás"/>;
 
   var suggestionImage = <img src={suggestion_image} class="suggestion-image" />;
 
-  var video = (
-    <div class="video-container">
-      <img src={ola} class="video" />
-    </div>
-  );
+  // var video = (
+  //   <div class="video-container">
+  //     <img src={ola} class="video" />
+  //   </div>
+  // );
 
   return (
     <div className="App-header page">
       <Title name={title.name} description={title.description} />
       <div style={{ margin: "auto" }}>
         {profileImage}
-        <p/>
       </div>
+      <p/>
       <div class="about-me-container">
         <div class="long-text-container">
           <LongText text={description1} />

@@ -8,8 +8,10 @@
 .page-titles{
     position: relative;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
     text-align: center;
     color: #00B2FF;
+    font-weight: bold;
     margin: auto auto 25px auto;
   }
 

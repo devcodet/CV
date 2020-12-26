@@ -2,12 +2,20 @@ import React from "react";
 import "./circle-image-description.css";
 
 function CircleImageDescription(props) {
-  return (
+  var marginRight = "40px";
+
+  if(props.IsImageProfile)
+    marginRight = "0";
+
+    return (
     <div
       style={{
         display: "block",
         padding: "20 auto",
-        margin: "0 40px 0 0",
+        marginTop: "0",
+        marginRight: marginRight,
+        marginBottom: "0",
+        marginLeft: "0",
         lineHeight: "40px",
         alignItems: "center",
       }}

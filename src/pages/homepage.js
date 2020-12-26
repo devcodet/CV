@@ -1,5 +1,6 @@
 import React from "react";
 import SocialMedia from "../components/social-media/social-media";
+import { useTranslation } from "react-i18next";
 
 import "./homepage.css";
 
@@ -80,32 +81,48 @@ function Homepage() {
     "#sql_server",
     "#git",
     "#java",
-    "#cSharp",
+    "#c_sharp",
     "#networking",
     "#learn",
     "#passion",
-    "#soft_skills"
+    "#soft_skills",
+    "#ready_to_learn",
+    "#speaking",
+    "#cloud",
+    "#desktop",
+    "#about_me",
+    "#tools",
+    "#languages",
+    "#skills",
+    "#projects",
+    "#courses",
+    "#experiences",
+    "#hobbies_interests",
+    "#inspiring_people",
+    "#chat_with_me"
   ];
 
   var foaltingContent = getFloatingWords(words);
 
+  const { t } = useTranslation();
+
   return (
     <div class="App-header">
+      <div class="floating-container">{foaltingContent}</div>
       <div>
-        <div class="floating-container">{foaltingContent}</div>
         <div>
           <p style={{ color: "#000", fontSize: 20 + "px", margin: 0 + "px" }}>
-            Hi there <span role="img ">👋👋</span>
+            {t('HiText')} <span role="img ">👋👋</span>
           </p>
           <p></p>
           <p style={{ color: "#000", fontSize: 20 + "px", margin: 0 + "px" }}>
-            Welcome to my page 😊
+            {t('Welcome')}
           </p>
           <p style={{ color: "#000", fontSize: 50 + "px", margin: 0 + "px" }}>
-            I'm Bruno Brás
+            {t('ImBruno')}
           </p>
           <p style={{ color: "#000", fontSize: 18 + "px", margin: 0 + "px" }}>
-            "I have on me all the dreams of the world 🌍"
+          {t('QuoteAllDreamWorld')}
           </p>
           <p style={{ color: "#000", fontSize: 10 + "px", margin: 0 + "px" }}>
             in TABACARIA

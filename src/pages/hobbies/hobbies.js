@@ -1,6 +1,8 @@
 import React from "react";
 import Title from "../../components/labels/title/titles";
 
+import { useTranslation } from "react-i18next";
+
 import learning from "../../assets/images/interests/learning.jpg";
 import technology from "../../assets/images/interests/technology.jpg";
 import maths from "../../assets/images/interests/maths.jpg";
@@ -22,48 +24,41 @@ import "./hobbies.css";
 import "../global.css";
 
 function Hobbies() {
-  var title = { "name":"#hobbies_interests ⚽", "description":"What I am doing in my free time?" };
+  const { t } = useTranslation();
+  var title = { name: t('HobbiesInterestsTitle'), description: t('HobbiesInterestsSubTitle') };
 
   var grid = getGridCircleImages([
     [
-      { src: learning, title: "Learning"},
-      { src: technology, title: "Technology"},
-      { src: maths, title: "Maths"},
-      { src: economy, title: "Economy"},
-      { src: politics, title: "Politics"},
-      { src: fado, title: "Fado"},
+      { src: learning, title: t('Learning') },
+      { src: technology, title: t('Technology') },
+      { src: maths, title: t('Maths') },
+      { src: economy, title: t('Economy') },
+      { src: politics, title: t('Politics') },
+      { src: fado, title: t('Fado') },
     ],
     [
-      { src: poetry, title: "Poetry"},
-      { src: selfDevelopment, title: "Self Development"},
-      { src: philosophy, title: "Philosophy"},
-      { src: history, title: "History"},
+      { src: poetry, title: t('Poetry') },
+      { src: selfDevelopment, title: t('SelfDevelopment') },
+      { src: philosophy, title: t('Philosophy') },
+      { src: history, title: t('History') },
     ],
     [
-      { src: volunteering, title: "Volunteering"},
-      { src: science, title: "Science"},
-      { src: astronomy, title: "Astronomy"},
-      { src: publicSpeaking, title: "Public Speaking"},
-    ]
+      { src: volunteering, title: t('Volunteering')},
+      { src: science, title: t('Science')},
+      { src: astronomy, title: t('Astronomy') },
+      { src: publicSpeaking, title: t('PublicSpeaking') },
+    ],
   ]);
 
   return (
     <div className="App-header page">
       <Title name={title.name} description={title.description} />
-      <div style={{ margin: "auto" }}>
-        {grid}
-      </div>
+      <div style={{ margin: "auto" }}>{grid}</div>
       <p></p>
-      <div style={{margin: "auto"}}>
-        <div style={{color: "black"}}>
-          "I entered a bookstore. I started to count the books that there are to read and the years that I will have of life."
-        </div>
-        <div style={{color: "black"}}>
-          "Don't arrive! Not even half the bookstore!"
-        </div>
-        <div style={{color: "black", fontSize: "15px"}}>
-          Almada Negreiros
-        </div>
+      <div style={{ margin: "auto" }}>
+        <div class="quotes">{t('BookStoreQuote1')}</div>
+        <div class="quotes">{t('BookStoreQuote2')}</div>
+        <div style={{ color: "black", fontSize: "15px" }}>Almada Negreiros</div>
       </div>
     </div>
   );

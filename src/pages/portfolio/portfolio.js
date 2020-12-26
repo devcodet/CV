@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 import Title, { SubTitle } from "../../components/labels/title/titles";
 
-import ola from "../../assets/images/ola.jpg";
+//import ola from "../../assets/images/ola.jpg";
+import { useTranslation } from "react-i18next";
 
 import zoomarine from "../../assets/images/portfolio/zoomarine.jpg";
 import airdesk from "../../assets/images/portfolio/airdesk.jpg";
@@ -17,7 +18,7 @@ import appStore from "../../assets/images/portfolio/appStore.png";
 import code from "../../assets/images/portfolio/code.png";
 import bitcoin from "../../assets/images/portfolio/bitcoin.png";
 
-import GetListFeatureItem from "../../components/cards/feature-item/feature-item";
+//import GetListFeatureItem from "../../components/cards/feature-item/feature-item";
 
 import "./portfolio.css";
 import "../global.css";
@@ -119,14 +120,16 @@ function GetGrid(values) {
 }
 
 function Portfolio() {
+  const { t } = useTranslation();
+
   var titles = [
     {
-      name: "#projects 🚧",
-      description: "Find out the projects that I participated",
+      name: t('ProjectsTitle'),
+      description: t('ProjectsSubTitle'),
     },
     {
-      name: "#courses 🏫",
-      description: "Find out the courses that I enrolled",
+      name: t('CoursesTitle'),
+      description: t('CoursesSubTitle'),
     },
   ];
 
@@ -134,7 +137,7 @@ function Portfolio() {
     [
       {
         title: "Zoomarine",
-        description: "With this application you can get to know the schedules of presentations and attractions for a specific day, browse interactive maps and much more",
+        description: t('ZoomarineDescription'),
         src: zoomarine,
         mainURL: "zoomarine.pt",
         googlePlayURL:
@@ -145,7 +148,7 @@ function Portfolio() {
       },
       {
         title: "Airdesk",
-        description: "Airdesk is a collaboration and management platform with a 360º view, which optimizes productivity and cost costs.",
+        description: t('AirdeskDescription'),
         src: airdesk,
         mainURL: "airdesk.ai",
         googlePlayURL:
@@ -157,14 +160,14 @@ function Portfolio() {
     [
       {
         title: "Curve",
-        description: "Curve is the new way to stroll around the city! Improve the quality of your journey with real-time alerts on hazardous areas, closed business, long queues, and more. Join this community and contribute information as you walk to your destination. Curve will help you get the perfect experience by adapting to your needs, creating the best route based on the alerts shared by the Curve community!",
+        description: t('CurveDescription'),
         src: curve,
         mainURL: "curve.pt",
         badges: [1,3,5],
       },
       {
         title: "SIGRE",
-        description: "Improve water resources management, responding to the need to update water infrastructure and cut costs.",
+        description: t('SigreDescription'),
         src: sigre,
         mainURL: "algardata.com/civi/",
         badges: [4,5],
@@ -173,14 +176,14 @@ function Portfolio() {
     [
       {
         title: "Bolinhas",
-        description: "Bolinhas is an app that allows you to sell/buy doughnuts and other products in real time using georeferencing",
+        description: t('BolinhasDescription'),
         src: bolinhas,
-        mainURL: "www.unykvis.com/en/projects/bolinhas",
+        mainURL: t('BolinhasURL'),
         badges: [5],
       },
       {
         title: "Loyalty",
-        description: "Application to read customer cards, and redeem vouchers.",
+        description: t('LoyaltyDescription'),
         src: loyalty,
         mainURL: "",
         googlePlayURL:
@@ -192,22 +195,22 @@ function Portfolio() {
 
   var courses = [
     [
-      { title: "Management Informatics 12º", description: "The management computer technician is the qualified professional who has competencies in the scope of the management of organizations, namely in the construction of business / project management models, creating matrices using computer applications for micro, small and medium companies, with a view to the effectiveness of results.", src: code },
-      { title: "Bitcoin Course", description: "The bitcoin course allow me to understand the world of bitcoin, how it works and technology of blockchain", src: bitcoin },
+      { title: t('ManagementInformaticsTitle'), description: t('ManagementInformaticsDescription'), src: code },
+      { title: t('BitcoinCourseTitle'), description: t('BitcoinCourseDescription'), src: bitcoin },
     ],
   ];
 
-  var list = [
-    { title: "project1", description: "project1", src: ola },
-    { title: "project2", description: "project2", src: ola },
-    { title: "project2", description: "project2", src: ola },
-  ];
+  // var list = [
+  //   { title: "project1", description: "project1", src: ola },
+  //   { title: "project2", description: "project2", src: ola },
+  //   { title: "project2", description: "project2", src: ola },
+  // ];
 
   var projectGrid = GetGrid(projects);
 
   var courseGrid = GetGrid(courses);
 
-  var items = GetListFeatureItem(list);
+  //var items = GetListFeatureItem(list);
 
   return (
     <div className="App-header page">
