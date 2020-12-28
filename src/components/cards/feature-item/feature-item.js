@@ -17,12 +17,12 @@ function GetListFeatureItem(values) {
     for (const [key, item] of Object.entries(values)) {
         list.push(
             <div class="item">
-          <FeatureItem
-            src={item["src"]}
-            title={item["title"]}
-            text={item["description"]}
-            />
-        </div>
+              <FeatureItem
+                src={item["src"]}
+                title={item["title"]}
+                text={item["description"]}
+                />
+            </div>
       );
     }
 

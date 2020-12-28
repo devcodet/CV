@@ -162,7 +162,7 @@ i18n
 
           //about_me
           AboutMeTitle: "#sobre_mim 😎",
-          AboutMeSubTitle: "Descobre um pouco em relação a mim",
+          AboutMeSubTitle: "Descobre um pouco mais em relação a mim",
           ImBrunoFullName: "Eu sou o Bruno Duarte Felício Brás 😶",
           YearsOld: "22 anos 🧑",
           Experience: "Programador Mid-Level com 4 anos de experência 💻⌨️",
@@ -219,12 +219,12 @@ i18n
           ProjectsTitle: "#projetos 🚧",
           ProjectsSubTitle: "Descobre os projetos nos quais tive envolvido",
  
-          ZoomarineDescription: "Com este aplicativo podes conhecer as programações de apresentações e atrações de um determinado dia, navegar em mapas interativos e muito mais",
+          ZoomarineDescription: "Com esta app podes conhecer as programações de apresentações e atrações de um determinado dia, navegar em mapas interativos e muito mais",
           AirdeskDescription: "Airdesk é uma plataforma de colaboração e gestão com visão 360º, que otimiza produtividade e custos.",
           CurveDescription: "Curve é a nova forma de passear pela cidade! Melhora a qualidade de tua viagem com alertas em tempo real sobre áreas perigosas, empresas fechadas, longas filas e muito mais. Junta-te a esta comunidade e contribui com informações enquanto caminhas até teu destino. O Curve irá ajudá-te a obter a experiência perfeita adaptando-se às tuas necessidades, criando o melhor percurso com base nos alertas partilhados pela comunidade Curve!",
-          SigreDescription: "Melhorar a gestão dos recursos hídricos, respondendo à necessidade de atualizar a infraestrutura hídrica e cortar custos.",
-          BolinhasDescription: "Bolinhas é um aplicativo que permite vender/comprar bolas de berlim e outros produtos em tempo real usando o georreferenciamento",
-          LoyaltyDescription: "Aplicativo para ler cartões de clientes e resgatar vouchers.",
+          SigreDescription: "Melhora a gestão dos recursos hídricos, respondendo à necessidade de atualizar a infraestrutura hídrica e cortar custos.",
+          BolinhasDescription: "Bolinhas é uma app que permite vender/comprar bolas de berlim e outros produtos em tempo real usando o georreferenciamento",
+          LoyaltyDescription: "App para ler cartões de clientes e resgatar vouchers.",
  
           BolinhasURL: "www.unykvis.com/pt/projetos/bolinhas",
  

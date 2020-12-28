@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState }from "react";
 import "./App.css";
 import { useTranslation } from "react-i18next";
 import "./config/i18n";
@@ -16,28 +16,28 @@ import Follow from "./pages/follow/follow";
 //Components
 import Menu from "./components/menu/menu.js";
 
+
 String.isNullOrEmpty = function (value) {
   return !(typeof value === "string" && value.length > 0);
 };
 
 function App() {
   const { t, i18n } = useTranslation();
-
-  var enLanguage = true;
-  var ptLanguage = false;
+  const [stateEN, setStateEN] = useState("selected");
+  const [statePT, setStatePT] = useState("");
 
   function changeToEN() {
     i18n.changeLanguage('en');
 
-    enLanguage = true;
-    ptLanguage = false;
+    setStateEN("selected");
+    setStatePT("");
   }
 
   function changeToPT() {
     i18n.changeLanguage('pt');
 
-    enLanguage = false;
-    ptLanguage = true;
+    setStateEN("");
+    setStatePT("selected");
   }
 
   return (
@@ -45,10 +45,10 @@ function App() {
       <div class="languages-container">
         <div class="switch-button">
           <a onClick={changeToEN}>
-            <div class={`${enLanguage ? "selected" : ""}`} >en</div>
+            <div class={stateEN}>en</div>
           </a>
           <a onClick={changeToPT}>
-            <div class={`${ptLanguage ? "selected" : ""}`} >pt</div>
+            <div class={statePT}>pt</div>
           </a>
         </div>
       </div>

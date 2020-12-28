@@ -1,13 +1,13 @@
 .features-items-container{
     position: relative;
     display: flex;
-    margin-top: 175px;
+    margin: 100px auto 0 auto;
     align-items: center;
     justify-content: center;
 }
 
 .features-items-container .item{
-    margin-right: 5%;
+    margin: 25px;
 }
 
 .circle-image-row{

@@ -111,23 +111,23 @@ function Homepage() {
       <div class="floating-container">{foaltingContent}</div>
       <div>
         <div>
-          <p style={{ color: "#000", fontSize: 20 + "px", margin: 0 + "px" }}>
+          <p style={{ color: "#000", fontSize: "20px", margin:"0px"}}>
             {t('HiText')} <span role="img ">👋👋</span>
           </p>
           <p></p>
-          <p style={{ color: "#000", fontSize: 20 + "px", margin: 0 + "px" }}>
+          <p style={{ color: "#000", fontSize: "20px", margin:"0px"}}>
             {t('Welcome')}
           </p>
-          <p style={{ color: "#000", fontSize: 50 + "px", margin: 0 + "px" }}>
+          <p style={{ color: "#000", fontSize: "50px", margin:"0px"}}>
             {t('ImBruno')}
           </p>
-          <p style={{ color: "#000", fontSize: 18 + "px", margin: 0 + "px" }}>
+          <p style={{ color: "#000", fontSize: "18px", margin:"0px"}}>
           {t('QuoteAllDreamWorld')}
           </p>
-          <p style={{ color: "#000", fontSize: 10 + "px", margin: 0 + "px" }}>
+          <p style={{ color: "#000", fontSize: "10px", margin:"0px"}}>
             in TABACARIA
           </p>
-          <p style={{ color: "#000", fontSize: 10 + "px", margin: 0 + "px" }}>
+          <p style={{ color: "#000", fontSize: "10px", margin:"0px"}}>
             Alvaro de Campos
           </p>
           <p />

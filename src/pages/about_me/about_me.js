@@ -17,6 +17,8 @@ import mobile_dev from '../../assets/images/profile/mobile_dev.jpg'
 import api_dev from '../../assets/images/profile/api_dev.jpg'
 import desktop_dev from '../../assets/images/profile/desktop_dev.png'
 
+import cv from '../../assets/CV.pdf';
+
 import "./about_me.css";
 import "../global.css";
 
@@ -85,11 +87,13 @@ function AboutMe() {
         </div>
         {suggestionImage}
       </div>
-      <p></p>
       <div style={{ margin: "auto" }}>
         {featuresItems}
         {/* {video} */}
       </div>
+      <a href={cv} download rel="noopener noreferrer" class="button">
+        #download_cv
+      </a>
     </div>
   );
 }
