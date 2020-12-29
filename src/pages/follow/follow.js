@@ -27,7 +27,7 @@ function Follow() {
 
       <div class="follow-container">
         <div class="suggestion-image-container">
-          <img src={followMe} class="suggestion-image" />
+          <img src={followMe} alt="suggestion" class="suggestion-image" />
         </div>
         {/* <div class="form-content">
           <form id="contact-form">
@@ -62,16 +62,16 @@ function Follow() {
         <div class="contacts-container">
           <div>
             <div>
-              <img class="icons-image" src={home} />
+              <img class="icons-image" alt="home-icon" src={home} />
               <div class="icons-text">
-                <a href="http://maps.google.com/?q=Loule" target="_blank" class="button">
+                <a href="http://maps.google.com/?q=Loule" rel="noopener noreferrer" target="_blank" class="button">
                   Loulé, Algarve, Portugal
                 </a>
               </div>
             </div>
             <p></p>
             <div>
-              <img class="icons-image" src={phone} />
+              <img class="icons-image" alt="phone-icon" src={phone} />
               <div class="icons-text">
                 <a href="tel:+351966036754" class="button">
                   966036754
@@ -80,7 +80,7 @@ function Follow() {
             </div>
             <p></p>
             <div>
-              <img class="icons-image" src={email} />
+              <img class="icons-image" alt="email-icon" src={email} />
               <address class="icons-text">
                 <a href="mailto:b.bras7@gmail.com" class="button">b.bras7@gmail.com</a>
               </address>

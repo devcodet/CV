@@ -127,7 +127,7 @@ i18n
             Volunteering: "Volunteering",
             Science: "Science",
             Astronomy: "Astronomy",
-            PublicSpeaking: "PublicSpeaking",
+            PublicSpeaking: "Public Speaking",
 
             BookStoreQuote1: "\"I entered a bookstore. I started to count the books that there are to read and the years that I will have of life.",
             BookStoreQuote2: "Don't arrive! Not even half the bookstore!\"",

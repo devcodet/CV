@@ -4,7 +4,7 @@ import "./feature-item.css";
 function FeatureItem(props) {
   return (
     <div class="feature-item">
-      <img src={props.src} />
+      <img src={props.src} alt="feature" />
       <div class="text">{props.title}</div>
       <div class="small text">{props.text}</div>
     </div>

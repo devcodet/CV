@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-import Title, { SubTitle } from "../../components/labels/title/titles";
+import Title from "../../components/labels/title/titles";
 
 //import ola from "../../assets/images/ola.jpg";
 import { useTranslation } from "react-i18next";
@@ -53,6 +53,9 @@ function getPartipationBadge(values) {
         badgeDivClass += "support-app-mobile";
         text = "SUPPORT APP MOBILE";
         break;
+
+      default:
+        break;
     }
 
     row.push(<div class={badgeDivClass}>{text}</div>);
@@ -61,7 +64,7 @@ function getPartipationBadge(values) {
   return <div>{row}</div>;
 }
 
-function GetGrid(values) {
+function getGrid(values) {
   var grid = [];
 
   for (const [key, value] of Object.entries(values)) {
@@ -77,28 +80,35 @@ function GetGrid(values) {
 
       if (!String.isNullOrEmpty(item[1].mainURL)) {
         mainURL = item[1].mainURL;
-        mainURLDiv.push(<div class="main-url button"> <a href={"https://" + mainURL} target="_blank">{mainURL}</a></div>);
+        mainURLDiv.push(
+          <div class="main-url button">
+            {" "}
+            <a href={"https://" + mainURL} target="_blank" rel="noopener noreferrer" >
+              {mainURL}
+            </a>
+          </div>
+        );
       }
 
       if (!String.isNullOrEmpty(item[1].googlePlayURL)) {
         storeLinks.push(
-          <a href={item[1].googlePlayURL} target="_blank" class="google-play">
-            <img class="google-play" src={googlePlay} />
+          <a href={item[1].googlePlayURL} target="_blank" class="google-play" rel="noopener noreferrer">
+            <img class="google-play" src={googlePlay} alt="google play icon" />
           </a>
         );
       }
 
       if (!String.isNullOrEmpty(item[1].appStoreURL)) {
         storeLinks.push(
-          <a href={item[1].appStoreURL} target="_blank">
-            <img class="app-store" src={appStore} />
+          <a href={item[1].appStoreURL} target="_blank" rel="noopener noreferrer" >
+            <img class="app-store" src={appStore} alt="app store icon" />
           </a>
         );
       }
 
       row.push(
         <div class="item">
-          <img class="image" src={item[1].src} />
+          <img class="image" src={item[1].src} alt="portfolio item icon"/>
           {badges}
           <div class="title">{item[1].title}</div>
           <p></p>
@@ -212,9 +222,9 @@ function Portfolio() {
   //   { title: "project2", description: "project2", src: ola },
   // ];
 
-  var projectGrid = GetGrid(projects);
+  var projectGrid = getGrid(projects);
 
-  var courseGrid = GetGrid(courses);
+  var courseGrid = getGrid(courses);
 
   //var items = GetListFeatureItem(list);
 

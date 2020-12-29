@@ -112,7 +112,7 @@ function Homepage() {
       <div>
         <div>
           <p style={{ color: "#000", fontSize: "20px", margin:"0px"}}>
-            {t('HiText')} <span role="img ">👋👋</span>
+            {t('HiText')}👋👋
           </p>
           <p></p>
           <p style={{ color: "#000", fontSize: "20px", margin:"0px"}}>

@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-import Title, { SubTitle } from "../../components/labels/title/titles";
-import AdvImage from "../../components/cards/images/adv-image";
+import Title from "../../components/labels/title/titles";
 import LongText from "../../components/labels/long-text/long-text";
 import getListFeatureItem from "../../components/cards/feature-item/feature-item";
 import CircleImageDescription from "../../components/cards/images/circle-image-description";
@@ -64,7 +63,7 @@ function AboutMe() {
     />
   );
 
-  var suggestionImage = <img src={suggestion_image} class="suggestion-image" />;
+  var suggestionImage = <img src={suggestion_image} class="suggestion-image" alt="suggestion"/>;
 
   // var video = (
   //   <div class="video-container">

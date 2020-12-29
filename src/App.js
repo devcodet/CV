@@ -14,7 +14,7 @@ import InspiringPeople from "./pages/inspiring_people/inspiring_people";
 import Follow from "./pages/follow/follow";
 
 //Components
-import Menu from "./components/menu/menu.js";
+// import Menu from "./components/menu/menu.js";
 
 
 String.isNullOrEmpty = function (value) {
@@ -22,7 +22,7 @@ String.isNullOrEmpty = function (value) {
 };
 
 function App() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [stateEN, setStateEN] = useState("selected");
   const [statePT, setStatePT] = useState("");
 

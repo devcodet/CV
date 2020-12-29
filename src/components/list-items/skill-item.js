@@ -5,7 +5,7 @@ import "./skill-item.css";
 function SkillItem(props) {
   return (
     <div class="skill-item-content">
-      <img class="skill-icon" src={props.source} />
+      <img class="skill-icon" src={props.source} alt="skill"/>
       <div class="skill-labels">
         <div class="skill-title">{props.title}</div>
         <p/>

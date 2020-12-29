@@ -2,14 +2,14 @@ import React from "react";
 import "./circle-image-description.css";
 
 function CircleImageDescription(props) {
-  var marginRight = "40px";
+  var mainClass = "circle-item";
 
   if(props.IsImageProfile)
-    marginRight = "0";
+    mainClass += " profile";
 
     return (
-    <div class="circle-item">
-      <img className="circle-image" src={props.source} />
+    <div class={mainClass}>
+      <img className="circle-image" src={props.source} alt="suggestion" />
       <div className="name">{props.title}</div>
       <div className="description">{props.description}</div>
     </div>

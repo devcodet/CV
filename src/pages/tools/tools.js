@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 
 import Title from "../../components/labels/title/titles";
@@ -26,7 +26,7 @@ import shield from "../../assets/images/tools/shield.svg";
 // import plus from "../../assets/images/tools/plus.svg";
 
 function Tools() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   var titles = [
     {
@@ -162,7 +162,7 @@ function Tools() {
       <p></p>
       <Title name={titles[0].title} description={titles[0].description} />
       <div class="tools-container">
-        <img src={suggestion_tools} class="suggestion-image" />
+        <img src={suggestion_tools} class="suggestion-image" alt="suggestion tools"/>
         {toolsGrid}
         {/* <div class="skills-container">
             {toolsSkills}
@@ -171,13 +171,13 @@ function Tools() {
       <p></p>
       <Title name={titles[1].title} description={titles[1].description} />
       <div class="tools-container">
-        <img src={suggestion_languages} class="suggestion-image" />
+        <img src={suggestion_languages} class="suggestion-image" alt="suggestion languages"/>
         {languagesGrid}
         {/* <div class="skills-container">
           {languagesSkills}
         </div> */}
       </div>
-      <Title name={titles[2].title} description={titles[2].description} />
+      <Title name={titles[2].title} description={titles[2].description} alt="suggestion skills" />
       <div class="tools-container">
         <div class="skills-container">
           <div>{softSkills}</div>
