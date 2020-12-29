@@ -8,8 +8,8 @@ function Progress(props){
     const strokeDashoffset =  perimeter - (props.percentage / 100) * perimeter;
 
     return (
-        <div style={{width: "100%", display:"inline", margin: "0 20px 20px 50px"}}>
-            <div className="progress-bar-container">
+        <div class="progress-item">
+            <div class="progress-circle-container">
               <div class="circle-text">{props.percentage}%</div>
                 <svg height={120} width={120}>
                     <circle

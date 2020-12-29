@@ -56,8 +56,8 @@ function getRandomNumber(min, max) {
 }
 
 function checkIfAlreadyExists(array, object){
-  return array.some(object1 => object1.numberSecondsX == object.numberSecondsX 
-    && array.some(object => object.numberSecondsY == object.numberSecondsY));
+  return array.some(object1 => object1.numberSecondsX === object.numberSecondsX 
+    && array.some(object => object.numberSecondsY === object.numberSecondsY));
 }
 
 function Homepage() {

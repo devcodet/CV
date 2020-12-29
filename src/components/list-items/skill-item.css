@@ -3,6 +3,11 @@
     margin: 0 50px 30px 0;
 }
 
+.skill-labels{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
 .skill-icon{
     height: 25px;
     width: 25px;

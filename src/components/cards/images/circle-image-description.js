@@ -8,19 +8,8 @@ function CircleImageDescription(props) {
     marginRight = "0";
 
     return (
-    <div
-      style={{
-        display: "block",
-        padding: "20 auto",
-        marginTop: "0",
-        marginRight: marginRight,
-        marginBottom: "0",
-        marginLeft: "0",
-        lineHeight: "40px",
-        alignItems: "center",
-      }}
-    >
-      <img className="circleimage" src={props.source} />
+    <div class="circle-item">
+      <img className="circle-image" src={props.source} />
       <div className="name">{props.title}</div>
       <div className="description">{props.description}</div>
     </div>

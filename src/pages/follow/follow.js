@@ -26,7 +26,9 @@ function Follow() {
       <Title name={title.name} description={title.description} />
 
       <div class="follow-container">
-        <img src={followMe} class="suggestion-image" />
+        <div class="suggestion-image-container">
+          <img src={followMe} class="suggestion-image" />
+        </div>
         {/* <div class="form-content">
           <form id="contact-form">
             <div className="form-group" class="control-form">
@@ -57,7 +59,7 @@ function Follow() {
             </div>
           </form>
         </div> */}
-        <div style={{ width: "600px", margin: "auto" }}>
+        <div class="contacts-container">
           <div>
             <div>
               <img class="icons-image" src={home} />
@@ -87,7 +89,7 @@ function Follow() {
         </div>
       </div>
       <div class="footer">
-        <div style={{ position: "absolute", left: "50%" }}>
+        <div class="social-container">
           <SocialMedia />
         </div>
       </div>

@@ -89,7 +89,7 @@ i18n
             CoursesTitle: "#courses 🏫",
             CoursesSubTitle: "Find out the courses that I enrolled",            
 
-            ManagementInformaticsTitle: "Management Informatics 12º",
+            ManagementInformaticsTitle: "Management Informatics",
             ManagementInformaticsDescription: "The management computer technician is the qualified professional who has competencies in the scope of the management of organizations, namely in the construction of business / project management models, creating matrices using computer applications for micro, small and medium companies, with a view to the effectiveness of results.",
 
             BitcoinCourseTitle: "Bitcoin Course",

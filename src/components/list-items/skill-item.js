@@ -6,7 +6,7 @@ function SkillItem(props) {
   return (
     <div class="skill-item-content">
       <img class="skill-icon" src={props.source} />
-      <div style={{ display: "inline", margin: "0 0 0 15px" }}>
+      <div class="skill-labels">
         <div class="skill-title">{props.title}</div>
         <p/>
         <div class="skill-description">{props.description}</div>
@@ -19,7 +19,7 @@ function SkillItem(props) {
   );
 }
 
-function GetSkillsList(values) {
+function getSkillsList(values) {
   var list = [];
 
   for (const [key, item] of Object.entries(values)) {
@@ -37,4 +37,4 @@ function GetSkillsList(values) {
   return list;
 }
 
-export default GetSkillsList;
+export default getSkillsList;

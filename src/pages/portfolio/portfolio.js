@@ -23,7 +23,7 @@ import bitcoin from "../../assets/images/portfolio/bitcoin.png";
 import "./portfolio.css";
 import "../global.css";
 
-function GetPartipationBadge(values) {
+function getPartipationBadge(values) {
   var row = [];
   for (const item of Object.entries(values)) {
     var badgeDivClass = "badge ";
@@ -43,7 +43,7 @@ function GetPartipationBadge(values) {
         badgeDivClass += "db";
         text = "DATABASE";
         break;
-      
+
       case 4:
         badgeDivClass += "app-mobile";
         text = "APP MOBILE";
@@ -70,13 +70,15 @@ function GetGrid(values) {
     for (const item of Object.entries(value)) {
       var storeLinks = [];
       var mainURL = "";
+      var mainURLDiv = [];
       var badges = "";
 
-      if (item[1].badges != null)
-        badges = GetPartipationBadge(item[1].badges);
+      if (item[1].badges != null) badges = getPartipationBadge(item[1].badges);
 
-      if(!String.isNullOrEmpty(item[1].mainURL))
+      if (!String.isNullOrEmpty(item[1].mainURL)) {
         mainURL = item[1].mainURL;
+        mainURLDiv.push(<div class="main-url button"> <a href={"https://" + mainURL} target="_blank">{mainURL}</a></div>);
+      }
 
       if (!String.isNullOrEmpty(item[1].googlePlayURL)) {
         storeLinks.push(
@@ -103,11 +105,7 @@ function GetGrid(values) {
           <p></p>
           <div class="description">{item[1].description}</div>
           <p></p>
-          <div class="main-url">
-            <a href={"https://" + mainURL} target="_blank">
-              {mainURL}
-            </a>
-            </div>
+          {mainURLDiv}
           <p></p>
           <div class="store-links">{storeLinks}</div>
         </div>
@@ -124,12 +122,12 @@ function Portfolio() {
 
   var titles = [
     {
-      name: t('ProjectsTitle'),
-      description: t('ProjectsSubTitle'),
+      name: t("ProjectsTitle"),
+      description: t("ProjectsSubTitle"),
     },
     {
-      name: t('CoursesTitle'),
-      description: t('CoursesSubTitle'),
+      name: t("CoursesTitle"),
+      description: t("CoursesSubTitle"),
     },
   ];
 
@@ -137,18 +135,18 @@ function Portfolio() {
     [
       {
         title: "Zoomarine",
-        description: t('ZoomarineDescription'),
+        description: t("ZoomarineDescription"),
         src: zoomarine,
         mainURL: "zoomarine.pt",
         googlePlayURL:
           "https://play.google.com/store/apps/details?id=com.zoomarine.discover",
         appStoreURL:
           "https://apps.apple.com/pt/app/zoomarine-algarve/id1483954662",
-          badges: [2,3,5],
+        badges: [2, 3, 5],
       },
       {
         title: "Airdesk",
-        description: t('AirdeskDescription'),
+        description: t("AirdeskDescription"),
         src: airdesk,
         mainURL: "airdesk.ai",
         googlePlayURL:
@@ -160,43 +158,51 @@ function Portfolio() {
     [
       {
         title: "Curve",
-        description: t('CurveDescription'),
+        description: t("CurveDescription"),
         src: curve,
         mainURL: "curve.pt",
-        badges: [1,3,5],
+        badges: [1, 3, 5],
       },
       {
         title: "SIGRE",
-        description: t('SigreDescription'),
+        description: t("SigreDescription"),
         src: sigre,
         mainURL: "algardata.com/civi/",
-        badges: [4,5],
+        badges: [4, 5],
       },
     ],
     [
       {
         title: "Bolinhas",
-        description: t('BolinhasDescription'),
+        description: t("BolinhasDescription"),
         src: bolinhas,
-        mainURL: t('BolinhasURL'),
+        mainURL: t("BolinhasURL"),
         badges: [5],
       },
       {
         title: "Loyalty",
-        description: t('LoyaltyDescription'),
+        description: t("LoyaltyDescription"),
         src: loyalty,
         mainURL: "",
         googlePlayURL:
           "https://play.google.com/store/apps/details?id=com.unykvis.loyalty",
-          badges: [4],
+        badges: [4],
       },
     ],
   ];
 
   var courses = [
     [
-      { title: t('ManagementInformaticsTitle'), description: t('ManagementInformaticsDescription'), src: code },
-      { title: t('BitcoinCourseTitle'), description: t('BitcoinCourseDescription'), src: bitcoin },
+      {
+        title: t("ManagementInformaticsTitle"),
+        description: t("ManagementInformaticsDescription"),
+        src: code,
+      },
+      {
+        title: t("BitcoinCourseTitle"),
+        description: t("BitcoinCourseDescription"),
+        src: bitcoin,
+      },
     ],
   ];
 
@@ -215,7 +221,7 @@ function Portfolio() {
   return (
     <div className="App-header page">
       <div class="portfolio-container">
-        <div style={{ width: "50%" }}>
+        <div class="projects-container">
           <Title
             alignment="center"
             name={titles[0].name}
@@ -223,7 +229,7 @@ function Portfolio() {
           />
           {projectGrid}
         </div>
-        <div style={{ width: "50%", left: "50%" }}>
+        <div class="courses-container">
           <Title
             alignment="center"
             name={titles[1].name}

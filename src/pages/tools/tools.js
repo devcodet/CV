@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Title from "../../components/labels/title/titles";
 import getProgressGrid from "../../components/cards/progress/progress";
 // import Progress from "../../components/cards/progress-circle/react-progress-circle";
-import GetSkillsList from "../../components/list-items/skill-item";
+import getSkillsList from "../../components/list-items/skill-item";
 
 import "./tools.css";
 import "../global.css";
@@ -38,8 +38,8 @@ function Tools() {
       description: t("LanguagesSubTitle"),
     },
     {
-      title: t('SkillsTitle'),
-      description: t('SkillsSubTitle'),
+      title: t("SkillsTitle"),
+      description: t("SkillsSubTitle"),
     },
   ];
 
@@ -87,42 +87,42 @@ function Tools() {
   //   ]
   // )
 
-  var softSkills = GetSkillsList([
+  var softSkills = getSkillsList([
     {
       src: team,
-      title: t('TeamWorkerTitle'),
-      description: t('TeamWorkerDescription1'),
-      description2: t('TeamWorkerDescription2')
+      title: t("TeamWorkerTitle"),
+      description: t("TeamWorkerDescription1"),
+      description2: t("TeamWorkerDescription2"),
     },
 
     {
       src: search,
-      title: t('CuriousTitle'),
-      description: t('CuriousDescription1'),
-      description2: t('CuriousDescription2'),
-      description3: t('CuriousDescription3')
+      title: t("CuriousTitle"),
+      description: t("CuriousDescription1"),
+      description2: t("CuriousDescription2"),
+      description3: t("CuriousDescription3"),
     },
 
     {
       src: communication,
-      title: t('EffectiveCommunicatorTitle'),
-      description: t('EffectiveCommunicatorDescription1'),
-      description2: t('EffectiveCommunicatorDescription2'),
-      description3: t('EffectiveCommunicatorDescription3'),
+      title: t("EffectiveCommunicatorTitle"),
+      description: t("EffectiveCommunicatorDescription1"),
+      description2: t("EffectiveCommunicatorDescription2"),
+      description3: t("EffectiveCommunicatorDescription3"),
     },
 
     {
       src: heart,
-      title: t('HelpfulServerTitle'),
-      description: t('HelpfulServerDescription1'),
-      description2: t('HelpfulServerDescription2'),
-      description3: t('HelpfulServerDescription3')
+      title: t("HelpfulServerTitle"),
+      description: t("HelpfulServerDescription1"),
+      description2: t("HelpfulServerDescription2"),
+      description3: t("HelpfulServerDescription3"),
     },
     {
       src: shield,
-      title: t('ResilientTitle'),
-      description: t('ResilientDescription1'),
-      description2: t('ResilientDescription2')
+      title: t("ResilientTitle"),
+      description: t("ResilientDescription1"),
+      description2: t("ResilientDescription2"),
     },
 
     // {
@@ -179,13 +179,11 @@ function Tools() {
       </div>
       <Title name={titles[2].title} description={titles[2].description} />
       <div class="tools-container">
-        <div style={{ margin: "0 0 0 50px", display: "flex" }}>
-          <div class="progress-container">
-            <div>{softSkills}</div>
-            {/* <div class="skills-container">
+        <div class="skills-container">
+          <div>{softSkills}</div>
+          {/* <div class="skills-container">
               {softSkills2}
             </div> */}
-          </div>
         </div>
         {/* <div style={{ display: "inline", margin: "auto" }}>
           <img src={suggestion_skills} class="suggestion-image" />

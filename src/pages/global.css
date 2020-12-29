@@ -1,16 +1,4 @@
-.features-items-container{
-    position: relative;
-    display: flex;
-    margin: 100px auto 0 auto;
-    align-items: center;
-    justify-content: center;
-}
-
-.features-items-container .item{
-    margin: 25px;
-}
-
-.circle-image-row{
+/* .circle-image-row{
    display: flex;
    margin: 0 auto;
-}
+} */
