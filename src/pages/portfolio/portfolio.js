@@ -15,7 +15,7 @@ import sigre from "../../assets/images/portfolio/sigre.png";
 import googlePlay from "../../assets/images/portfolio/googlePlay.png";
 import appStore from "../../assets/images/portfolio/appStore.png";
 
-import code from "../../assets/images/portfolio/code.png";
+import diploma from "../../assets/images/portfolio/diploma.jpg";
 import bitcoin from "../../assets/images/portfolio/bitcoin.png";
 
 //import GetListFeatureItem from "../../components/cards/feature-item/feature-item";
@@ -81,18 +81,25 @@ function getGrid(values) {
       if (!String.isNullOrEmpty(item[1].mainURL)) {
         mainURL = item[1].mainURL;
         mainURLDiv.push(
-          <div class="main-url button">
-            {" "}
-            <a href={"https://" + mainURL} target="_blank" rel="noopener noreferrer" >
-              {mainURL}
-            </a>
-          </div>
+          <a
+            href={"https://" + mainURL}
+            target="_blank"
+            rel="noopener noreferrer"
+            // class="main-url button"
+          >
+            {mainURL}
+          </a>
         );
       }
 
       if (!String.isNullOrEmpty(item[1].googlePlayURL)) {
         storeLinks.push(
-          <a href={item[1].googlePlayURL} target="_blank" class="google-play" rel="noopener noreferrer">
+          <a
+            href={item[1].googlePlayURL}
+            target="_blank"
+            class="google-play"
+            rel="noopener noreferrer"
+          >
             <img class="google-play" src={googlePlay} alt="google play icon" />
           </a>
         );
@@ -100,7 +107,11 @@ function getGrid(values) {
 
       if (!String.isNullOrEmpty(item[1].appStoreURL)) {
         storeLinks.push(
-          <a href={item[1].appStoreURL} target="_blank" rel="noopener noreferrer" >
+          <a
+            href={item[1].appStoreURL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img class="app-store" src={appStore} alt="app store icon" />
           </a>
         );
@@ -108,7 +119,7 @@ function getGrid(values) {
 
       row.push(
         <div class="item">
-          <img class="image" src={item[1].src} alt="portfolio item icon"/>
+          <img class="image" src={item[1].src} alt="portfolio item icon" />
           {badges}
           <div class="title">{item[1].title}</div>
           <p></p>
@@ -206,7 +217,7 @@ function Portfolio() {
       {
         title: t("ManagementInformaticsTitle"),
         description: t("ManagementInformaticsDescription"),
-        src: code,
+        src: diploma,
       },
       {
         title: t("BitcoinCourseTitle"),

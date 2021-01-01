@@ -21,6 +21,7 @@
 }
 
 .item {
+  min-height: 450px;
   margin: auto;
   width: 31%;
   /* margin-right: 5%; */
@@ -48,9 +49,9 @@
 
 .main-url {
   width: 100%;
-  margin: auto;
   color: black;
   font-size: 15px;
+  margin: 15px;
   padding: 0;
 }
 

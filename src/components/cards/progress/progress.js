@@ -3,17 +3,35 @@ import React from 'react';
 import './progress.css'
 
 function Progress(props){
+    var level = "";
+
     const radius = 60 - 6 * 2;
     const perimeter = radius * 2 * Math.PI;
     const strokeDashoffset =  perimeter - (props.percentage / 100) * perimeter;
 
+    switch(true){
+      case (props.percentage < 30):
+        level = "low";
+        break;
+      case (props.percentage < 61):
+        level = "middle";
+        break;
+      case (props.percentage < 100):
+        level = "high";
+        break;
+    }
+
+    var circleTextClass = `circle-text ${level}`;
+    var contentClass = `content ${level}`;
+    var textClass = `name-text ${level}`;
+
     return (
         <div class="progress-item">
             <div class="progress-circle-container">
-              <div class="circle-text">{props.percentage}%</div>
+              <div class={circleTextClass}>{props.percentage}%</div>
                 <svg height={120} width={120}>
                     <circle
-                        className='content'
+                        className={contentClass}
                         strokeWidth={6}
                         strokeDasharray={perimeter + ' ' + perimeter}
                         style={{ strokeDashoffset }}
@@ -23,7 +41,7 @@ function Progress(props){
                     />
                 </svg>
             </div>
-            <div class="name-text">{props.name}</div>
+            <div class={textClass}>{props.name}</div>
         </div>
     );
 }

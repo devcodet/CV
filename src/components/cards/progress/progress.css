@@ -27,8 +27,8 @@
 }
 
 .name-text{
-    color: green;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: bold;
     word-wrap: none;
 }
 
@@ -40,7 +40,7 @@
 
 .content {
     fill:transparent;
-    stroke: green;
+    /* stroke: green; */
   }
 
 .circle-text{
@@ -48,7 +48,22 @@
     margin-left: 35%;
     font-size: 25px;
     position: absolute;
-    color: green;
+    /* color: green; */
+}
+
+.high{
+    color: #56de07;
+    stroke: #56de07;
+}
+
+.middle{
+    color: #ffc700;
+    stroke: #ffc700;
+}
+
+.low{
+    color: #ff930f;
+    stroke: #ff930f;
 }
 
 @media screen and (max-width: 1250px) {

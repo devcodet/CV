@@ -46,9 +46,9 @@ function Tools() {
   var toolsGrid = getProgressGrid([
     [
       { value: 80, name: "Android Studio" },
+      { value: 80, name: "Visual Studio" },
       { value: 70, name: "Git" },
       { value: 60, name: "Visual Studio Code" },
-      { value: 80, name: "Visual Studio" },
     ],
     [
       { value: 60, name: "Microsoft SQL SSMS" },
@@ -64,7 +64,7 @@ function Tools() {
       { value: 60, name: "SQL" },
     ],
     [
-      { value: 35, name: "JavaScript" },
+      { value: 35, name: "Javascript" },
       { value: 30, name: "HTML/CSS" },
     ],
   ]);
