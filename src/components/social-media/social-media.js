@@ -4,6 +4,7 @@ import './social-media.css'
 
 import linkedin from '../../assets/images/social/linkedin.svg'
 import github from '../../assets/images/social/github.svg'
+import stackoverflow from '../../assets/images/social/stack-overflow.svg'
 import facebook from '../../assets/images/social/facebook.svg'
 import instagram from '../../assets/images/social/instagram.svg'
 import twitter from '../../assets/images/social/twitter.svg'
@@ -12,6 +13,7 @@ function SocialMedia() {
 
     var linkedin_link = "https://www.linkedin.com/in/bruno-br%C3%A1s-7b6b121a3/";
     var github_link = "https://github.com/devcodet";
+    var stackoverflow_link = "https://stackoverflow.com/users/8673077/dev-bbras";
     var facebook_link = "https://www.facebook.com/bbras7/";
     var instagram_link = "https://www.instagram.com/bbras7/";
     var twitter_link = "https://twitter.com/BrunoBrs9";
@@ -26,6 +28,11 @@ function SocialMedia() {
       <a href={github_link} target="_blank" rel="noopener noreferrer">
         <div class="social-item github" >
           <img class="icon" src={github} alt="github-icon"/>
+        </div>
+      </a>
+      <a href={stackoverflow_link} target="_blank" rel="noopener noreferrer">
+        <div class="social-item stackoverflow" >
+          <img class="icon" src={stackoverflow} alt="github-icon"/>
         </div>
       </a>
       <a href={facebook_link} target="_blank" rel="noopener noreferrer">
