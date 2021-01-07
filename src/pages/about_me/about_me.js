@@ -17,12 +17,13 @@ import api_dev from "../../assets/images/profile/api_dev.jpg";
 import desktop_dev from "../../assets/images/profile/desktop_dev.png";
 
 import cv from "../../assets/CV.pdf";
+import cvEN from "../../assets/CV-EN.pdf";
 
 import "./about_me.css";
 import "../global.css";
 
 function AboutMe() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   var title = { name: t("AboutMeTitle"), description: t("AboutMeSubTitle") };
 
@@ -71,6 +72,11 @@ function AboutMe() {
   //   </div>
   // );
 
+  var cvLink = cvEN;
+
+  if(i18n.language == "pt")
+    cvLink = cv;
+
   return (
     <div className="App-header page">
       <Title name={title.name} description={title.description} />
@@ -103,7 +109,7 @@ function AboutMe() {
       </div>
       {featuresItems}
       {/* {video} */}
-      <a href={cv} download rel="noopener noreferrer" class="button">
+      <a href={cvLink} download rel="noopener noreferrer" class="button">
         #download_cv
       </a>
     </div>
