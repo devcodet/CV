@@ -18,8 +18,8 @@ import Follow from "./pages/follow/follow";
 
 
 String.isNullOrEmpty = function (value) {
-  return !(typeof value === "string" && value.length > 0);
-};
+  return !(typeof value === "string" && value.length > 0); 
+}; 
 
 function App() {
   const { i18n } = useTranslation();
@@ -53,7 +53,7 @@ function App() {
         </div>
       </div>
 
-      {/* <Menu /> */}
+      {/* <Menu /> */ /**/}
 
       <Homepage />
       <AboutMe />
