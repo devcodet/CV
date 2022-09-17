@@ -76,6 +76,7 @@ i18n
             ProjectsTitle: "#projects 🚧",
             ProjectsSubTitle: "Find out the projects that I participated",
 
+            CAMobileDescription: "CA Mobile is a banking channel where you can find solutions to manage your finances with total comfort, speed, ease and security.",  
             ZoomarineDescription: "With this application you can get to know the schedules of presentations and attractions for a specific day, browse interactive maps and much more",
             AirdeskDescription: "Airdesk is a collaboration and management platform with a 360º view, which optimizes productivity and cost costs.",
             CurveDescription: "Curve is the new way to stroll around the city! Improve the quality of your journey with real-time alerts on hazardous areas, closed business, long queues, and more. Join this community and contribute information as you walk to your destination. Curve will help you get the perfect experience by adapting to your needs, creating the best route based on the alerts shared by the Curve community!",

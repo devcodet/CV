@@ -33,22 +33,12 @@ function App() {
     setStatePT("");
   }
 
-  function changeToPT() {
-    i18n.changeLanguage('pt');
-
-    setStateEN("");
-    setStatePT("selected");
-  }
-
   return (
     <div className="App">
       <div class="languages-container">
         <div class="switch-button">
           <a onClick={changeToEN}>
             <div class={stateEN}>en</div>
-          </a>
-          <a onClick={changeToPT}>
-            <div class={statePT}>pt</div>
           </a>
         </div>
       </div>

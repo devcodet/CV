@@ -5,6 +5,7 @@ import Title from "../../components/labels/title/titles";
 //import ola from "../../assets/images/ola.jpg";
 import { useTranslation } from "react-i18next";
 
+import caMobile from "../../assets/images/portfolio/caMobile.jpg";
 import zoomarine from "../../assets/images/portfolio/zoomarine.jpg";
 import airdesk from "../../assets/images/portfolio/airdesk.jpg";
 import curve from "../../assets/images/portfolio/curve.jpg";
@@ -153,6 +154,15 @@ function Portfolio() {
   ];
 
   var projects = [
+    [
+      {
+        title: "CA MOBILE",
+        description: t("CAMobileDescription"),
+        src: caMobile,
+        mainURL: "creditoagricola.pt",
+        badges: [4, 5],
+      },
+    ],
     [
       {
         title: "Zoomarine",
