@@ -2,7 +2,6 @@ import React from "react";
 
 import Title from "../../components/labels/title/titles";
 
-//import ola from "../../assets/images/ola.jpg";
 import { useTranslation } from "react-i18next";
 
 import caMobile from "../../assets/images/portfolio/caMobile.jpg";
@@ -19,8 +18,6 @@ import appStore from "../../assets/images/portfolio/appStore.png";
 import diploma from "../../assets/images/portfolio/diploma.jpg";
 import bitcoin from "../../assets/images/portfolio/bitcoin.png";
 
-//import GetListFeatureItem from "../../components/cards/feature-item/feature-item";
-
 import "./portfolio.css";
 import "../global.css";
 
@@ -33,11 +30,11 @@ function getPartipationBadge(values) {
     switch (item[1]) {
       case 1:
         badgeDivClass += "api";
-        text = "API";
+        text = "BACKEND";
         break;
       case 2:
         badgeDivClass += "frontend-api";
-        text = "FRONTEND API";
+        text = "FRONTEND BACKEND";
         break;
 
       case 3:
@@ -52,7 +49,7 @@ function getPartipationBadge(values) {
 
       case 5:
         badgeDivClass += "support-app-mobile";
-        text = "SUPPORT APP MOBILE";
+        text = "SUPPORT IN APP MOBILE";
         break;
 
       default:

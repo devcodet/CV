@@ -11,8 +11,7 @@ import Portfolio from "./pages/portfolio/portfolio";
 import Expirences from "./pages/experiences/experiences";
 import Hobbies from "./pages/hobbies/hobbies";
 import InspiringPeople from "./pages/inspiring_people/inspiring_people";
-import Follow from "./pages/follow/follow";
-
+import SocialMedia from "./components/social-media/social-media";
 //Components
 // import Menu from "./components/menu/menu.js";
 
@@ -23,26 +22,17 @@ String.isNullOrEmpty = function (value) {
 
 function App() {
   const { i18n } = useTranslation();
-  const [stateEN, setStateEN] = useState("selected");
-  const [statePT, setStatePT] = useState("");
+  const [setStateEN] = useState("selected");
 
   function changeToEN() {
     i18n.changeLanguage('en');
 
     setStateEN("selected");
-    setStatePT("");
   }
 
   return (
     <div className="App">
-      <div class="languages-container">
-        <div class="switch-button">
-          <a onClick={changeToEN}>
-            <div class={stateEN}>en</div>
-          </a>
-        </div>
-      </div>
-
+      
       {/* <Menu /> */ /**/}
 
       <Homepage />
@@ -52,7 +42,7 @@ function App() {
       <Expirences />
       <Hobbies />
       <InspiringPeople />
-      <Follow />
+      <SocialMedia />
     </div>
   );
 }

@@ -37,9 +37,18 @@
   background-color: #F48024;
 }
 
+.mail{
+  background-color: #ebba34;
+}
+
+.phone{
+  background-color: green;
+}
+
 .icon{
   height: 30px;
   width: 12px;
   margin: auto;
   display: block;
+  color: white;
 }

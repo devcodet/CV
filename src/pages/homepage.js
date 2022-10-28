@@ -1,6 +1,11 @@
 import React from "react";
 import SocialMedia from "../components/social-media/social-media";
+import CircleImageDescription from "../components/cards/images/circle-image-description";
+
+import profile_image from "../assets/images/profile/profile_image.jpg";
+
 import { useTranslation } from "react-i18next";
+
 
 import "./homepage.css";
 
@@ -11,7 +16,7 @@ function getFloatingWords(values) {
   for (const [key, value] of Object.entries(values)) {
     var numberSecondsX = getRandomNumber(15, 90);
     var numberSecondsY = getRandomNumber(15, 90);
-    var delay = getRandomNumber(0,2);
+    var delay = 0; //getRandomNumber(0);
 
     var objectGenerated = {
       numberSecondsX: numberSecondsX,
@@ -19,14 +24,6 @@ function getFloatingWords(values) {
     };
 
     if(checkIfAlreadyExists(history, objectGenerated)){
-      // numberSecondsX = getRandomNumber(5, 20);
-      // numberSecondsY = getRandomNumber(5, 20);
-   
-      // objectGenerated = {
-      //   numberSecondsX: numberSecondsX,
-      //   numberSecondsY: numberSecondsY,
-      // };
-
       continue;
     }
 
@@ -39,7 +36,6 @@ function getFloatingWords(values) {
         class="fc"
         style={{
           animation: animationValue,
-
         }}
       >
         {value}
@@ -63,11 +59,16 @@ function checkIfAlreadyExists(array, object){
 function Homepage() {
   var words = [
     "#api",
+    "#backend",
     "#mobile",
     "#dev",
     "#community",
     "#javascript",
     "#react",
+    "#reach_me_out",
+    "#events",
+    "#always_learning",
+    "#vs",
     "#dotNet",
     "#xamarin",
     "#inspirations",
@@ -110,28 +111,36 @@ function Homepage() {
     <div class="App-header">
       <div class="floating-container">{foaltingContent}</div>
       <div>
-        <div>
-          <p style={{ color: "#000", fontSize: "20px", margin:"0px"}}>
-            {t('HiText')}👋👋
-          </p>
-          <p></p>
-          <p style={{ color: "#000", fontSize: "20px", margin:"0px"}}>
-            {t('Welcome')}
-          </p>
-          <p style={{ color: "#000", fontSize: "50px", margin:"0px"}}>
-            {t('ImBruno')}
-          </p>
-          <p style={{ color: "#000", fontSize: "18px", margin:"0px"}}>
+        <CircleImageDescription
+          IsImageProfile="true"
+          source={profile_image}
+        />
+        <p style={{ color: "#000", fontSize: "20px", margin:"0px"}}>
+          {t('HiText')}👋👋
+        </p>
+        <p></p>
+        <p style={{ color: "#000", fontSize: "20px", margin:"0px"}}>
+          {t('Welcome')}
+        </p>
+        <p style={{ color: "#000", fontSize: "50px", margin:"0px"}}>
+          {t('ImBruno')}
+        </p>
+        <p style={{ color: "#000", fontSize: "18px", margin:"0px"}}>
+          {t('QuoteReadyToEmpower')}
+        </p>
+        <p/>
+        <p/>
+        <p/>
+        <p style={{ color: "#000", fontSize: "18px", margin:"0px"}}>
           {t('QuoteAllDreamWorld')}
-          </p>
-          <p style={{ color: "#000", fontSize: "10px", margin:"0px"}}>
-            in TABACARIA
-          </p>
-          <p style={{ color: "#000", fontSize: "10px", margin:"0px"}}>
-            Alvaro de Campos
-          </p>
-          <p />
-        </div>
+        </p>
+        <p style={{ color: "#000", fontSize: "10px", margin:"0px"}}>
+          in TABACARIA
+        </p>
+        <p style={{ color: "#000", fontSize: "10px", margin:"0px"}}>
+          Alvaro de Campos
+        </p>
+        <p/>
       </div>
       <SocialMedia />
     </div>

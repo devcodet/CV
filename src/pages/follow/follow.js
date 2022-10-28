@@ -6,8 +6,6 @@ import Title from "../../components/labels/title/titles";
 import SocialMedia from "../../components/social-media/social-media";
 
 import followMe from "../../assets/images/followMe.jpg";
-import phone from "../../assets/images/phone.svg";
-import email from "../../assets/images/mail.svg";
 import home from "../../assets/images/home.svg";
 
 import "./follow.css";
@@ -70,21 +68,7 @@ function Follow() {
               </div>
             </div>
             <p></p>
-            <div>
-              <img class="icons-image" alt="phone-icon" src={phone} />
-              <div class="icons-text">
-                <a href="tel:+351966036754" class="button">
-                  966036754
-                </a>
-              </div>
-            </div>
             <p></p>
-            <div>
-              <img class="icons-image" alt="email-icon" src={email} />
-              <address class="icons-text">
-                <a href="mailto:b.bras7@gmail.com" class="button">b.bras7@gmail.com</a>
-              </address>
-            </div>
           </div>
         </div>
       </div>
