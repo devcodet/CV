@@ -8,14 +8,11 @@ import CircleImageDescription from "../../components/cards/images/circle-image-d
 import { useTranslation } from "react-i18next";
 
 //ImageSource
-import profile_image from "../../assets/images/profile/profile_image.jpg";
 import suggestion_image from "../../assets/images/profile/suggestion_image.jpg";
 
 import mobile_dev from "../../assets/images/profile/mobile_dev.jpg";
 import api_dev from "../../assets/images/profile/api_dev.jpg";
 import desktop_dev from "../../assets/images/profile/desktop_dev.png";
-
-import cvEN from "../../assets/CV-EN.pdf";
 
 import "./about_me.css";
 import "../global.css";

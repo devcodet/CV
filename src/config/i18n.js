@@ -14,7 +14,7 @@ i18n
             HiText: "Hi there",
             Welcome: "Welcome to my page 😊",
             ImBruno: "I'm Bruno Brás",
-            QuoteReadyToEmpower: "READY TO #emPOWER YOUR PROJECTS ⚡",
+            QuoteReadyToEmpower: "READY TO #emPOWER YOUR PROJECTS 🚀⚡",
             QuoteAllDreamWorld: "\"I have on me all the dreams of the world 🌍\"",
             CoffeeTalk: "Let's Grab a Coffee ☕",
 

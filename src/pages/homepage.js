@@ -58,7 +58,7 @@ function checkIfAlreadyExists(array, object){
 
 function Homepage() {
   var words = [
-    "#api",
+    "#api gfdgjdfgdljkigfdljkgfkdlj",
     "#backend",
     "#mobile",
     "#dev",
@@ -126,19 +126,19 @@ function Homepage() {
           {t('ImBruno')}
         </p>
         <p style={{ color: "#000", fontSize: "18px", margin:"0px"}}>
-          {t('QuoteReadyToEmpower')}
-        </p>
-        <p/>
-        <p/>
-        <p/>
-        <p style={{ color: "#000", fontSize: "18px", margin:"0px"}}>
           {t('QuoteAllDreamWorld')}
-        </p>
         <p style={{ color: "#000", fontSize: "10px", margin:"0px"}}>
           in TABACARIA
         </p>
         <p style={{ color: "#000", fontSize: "10px", margin:"0px"}}>
           Alvaro de Campos
+        </p>
+        </p>
+        <p/>
+        <p/>
+        <p/>
+        <p style={{ color: "#000", fontSize: "18px", margin:"0px"}}>
+          {t('QuoteReadyToEmpower')}
         </p>
         <p/>
       </div>

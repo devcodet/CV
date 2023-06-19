@@ -16,7 +16,7 @@ function SocialMedia() {
 
     var linkedin_link = "https://www.linkedin.com/in/bruno-br%C3%A1s-7b6b121a3/";
     var mail_link = "mailto:b.bras7@gmail.com";
-    var phone_link = "tel:+35196603675";
+    var phone_link = "tel:+351966036754";
     var github_link = "https://github.com/devcodet";
     var stackoverflow_link = "https://stackoverflow.com/users/8673077/dev-bbras";
     var facebook_link = "https://www.facebook.com/bbras7/";
@@ -73,7 +73,7 @@ function SocialMedia() {
         <div>
         <p></p>
         <a href={cvEN} download rel="noopener noreferrer" class="button">
-          📥 #download_cv
+          📥 #grab_my_cv
         </a>
         </div>
       </div>
